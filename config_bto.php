@@ -21,7 +21,8 @@ function head($base_url, $who_is) {
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="<?= $base_url; ?>vendor/MDB-Free/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?= $base_url; ?>vendor/MDB-Free/css/mdb.min.css" rel="stylesheet">
-    <link href="<?= $base_url; ?>vendor/MDB-Free/css/style.min.css" rel="stylesheet">
+    <link href="<?= $base_url; ?>vendor/fontawesome-free-5.2.0-web/css/all.min.css" rel="stylesheet">
+    <link href="<?= $base_url; ?>vendor/bto/css/style.min.css" rel="stylesheet">
     <?php
 }
 
@@ -61,6 +62,7 @@ function scripts($base_url) {
     <script type="text/javascript" src="<?= $base_url; ?>vendor/MDB-Free/js/popper.min.js"></script>
     <script type="text/javascript" src="<?= $base_url; ?>vendor/MDB-Free/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="<?= $base_url; ?>vendor/MDB-Free/js/mdb.min.js"></script>
+    <script type="text/javascript" src="<?= $base_url; ?>vendor/fontawesome-free-5.2.0-web/js/all.min.js"></script>
     <?php
 }
 ?>
