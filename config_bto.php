@@ -22,7 +22,7 @@ function head($base_url, $who_is) {
     <link href="<?= $base_url; ?>vendor/MDB-Free/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?= $base_url; ?>vendor/MDB-Free/css/mdb.min.css" rel="stylesheet">
     <link href="<?= $base_url; ?>vendor/fontawesome-free-5.2.0-web/css/all.min.css" rel="stylesheet">
-    <link href="<?= $base_url; ?>vendor/bto/css/style.min.css" rel="stylesheet">
+    <link href="<?= $base_url; ?>bto/css/style.min.css" rel="stylesheet">
     <?php
 }
 
