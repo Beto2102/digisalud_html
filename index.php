@@ -39,13 +39,13 @@ include $url . 'config_bto.php';
             <div class="container-fluid">
                 <div class="row justify-content-center">
 
-                    <div class="col-md-4 col-xs-2">
+                    <div class="col-sm-4 col-2">
                         <div class=" section-menu">
                             <img class="bto-icons-tam" src="bto/images/icon/Icon_menu.png" alt="Digisalud"/>
                         </div>
                     </div>
 
-                    <div class="col-md-4 col-xs-7">
+                    <div class="col-sm-4 col-8">
                         <div class="section-search">
                             <img src="bto/digisalud-logo.png" alt="Digisalud">
                             <div class="inner-addon left-addon">
@@ -55,7 +55,7 @@ include $url . 'config_bto.php';
                         </div>
                     </div>
 
-                    <div class="col-md-4 col-xs-2 text-right">
+                    <div class="col-sm-4 col-2 text-right">
                         <div class="section-conexion">
                             <div class="d-none d-sm-block">
                                 <span>Conexión</span>
