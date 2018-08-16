@@ -120,7 +120,7 @@ include $url . 'config_bto.php';
         <section class="dig-sub-header">
             <div class="container-fluid">
                 <div class="row text-center align-items-end pt-3 pb-2">
-                    <div class="col-md-3">
+                    <div class="col-sm-3">
                         <div class="row">
                             <div class="col-6 text-right p-0 pr-1">
                                 <img src="bto/images/icon/Icon_jornada.png" alt="Digisalud"/>
@@ -133,7 +133,7 @@ include $url . 'config_bto.php';
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-3">
                         <div class="row">
                             <div class="col-6 text-right p-0 pr-1">
                                 <img src="bto/images/icon/Icon_voluntarios.png" alt="Digisalud"/>
@@ -146,7 +146,7 @@ include $url . 'config_bto.php';
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-3">
                         <div class="row">
                             <div class="col-6 text-right p-0 pr-1">
                                 <img src="bto/images/icon/Icon_benefciarios.png" alt="Digisalud"/>
@@ -159,7 +159,7 @@ include $url . 'config_bto.php';
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-3">
                         <div class="row">
                             <div class="col-6 text-right p-0 pr-1">
                                 <img src="bto/images/icon/Icon_comunidadmedica.png" alt="Digisalud"/>
