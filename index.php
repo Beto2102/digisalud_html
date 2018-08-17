@@ -23,7 +23,7 @@ include $url . 'config_bto.php';
         <div id="div-oculto"></div>
 
         <!-- MENU DESPLEGABLE -->
-        <div class="digi-menu ocultar-pop">
+        <div class="digi-modal digi-menu ocultar-pop">
             <div class="digi-cont-top digi-menu-header dig-deg-orange">
                 <div>
                     <img class="img-fluid" src="bto/digisalud-logo.png" alt="Digisalud">  
@@ -35,17 +35,17 @@ include $url . 'config_bto.php';
         </div>
         <!-- /MENU DESPLEGABLE -->
 
-        <header class="header-digisalud dig-deg-orange pb-3 pt-3">
+        <header class="header-digisalud dig-deg-orange">
             <div class="container-fluid">
                 <div class="row justify-content-center">
 
-                    <div class="col-md-4 col-xs-2">
+                    <div class="col-sm-4 col-2">
                         <div class=" section-menu">
                             <img class="bto-icons-tam" src="bto/images/icon/Icon_menu.png" alt="Digisalud"/>
                         </div>
                     </div>
 
-                    <div class="col-md-4 col-xs-7">
+                    <div class="col-sm-4 col-8">
                         <div class="section-search">
                             <img src="bto/digisalud-logo.png" alt="Digisalud">
                             <div class="inner-addon left-addon">
@@ -55,7 +55,7 @@ include $url . 'config_bto.php';
                         </div>
                     </div>
 
-                    <div class="col-md-4 col-xs-2 text-right">
+                    <div class="col-sm-4 col-2 text-right">
                         <div class="section-conexion">
                             <div class="d-none d-sm-block">
                                 <span>Conexión</span>
@@ -64,7 +64,7 @@ include $url . 'config_bto.php';
 
                             <img id="btn-conex" class="bto-icons-tam d-block d-sm-none" src="bto/images/icon/Icon_conexion.png" alt="Digisalud"/> 
 
-                            <div class="digi-popup body-section-conexion ocultar-pop">
+                            <div class="digi-modal digi-popup body-section-conexion ocultar-pop">
                                 <div class="container-fluid">
                                     <div class="row ">
 
@@ -119,7 +119,7 @@ include $url . 'config_bto.php';
         <!--SUB MENU-->
         <section class="dig-sub-header">
             <div class="container-fluid">
-                <div class="row text-center align-items-end pt-3 pb-2">
+                <div class="row text-center align-items-end">
                     <div class="col-md-3">
                         <div class="row">
                             <div class="col-6 text-right p-0 pr-1">
@@ -177,9 +177,8 @@ include $url . 'config_bto.php';
         </section>
         <!--/SUB MENU-->
 
-
         <!--POPUP-->
-        <div class="digi-popup principal-pop ocultar-pop" >
+        <div class="digi-modal digi-popup principal-pop ocultar-pop" >
             <div class="container-fluid">
                 <div class="row text-center">
 
@@ -210,7 +209,7 @@ include $url . 'config_bto.php';
                     <div class="container">
                         <div class="row justify-content-md-center">
                             <div class="col-12 col-md-auto">
-                                <h2>¡Bienvenidos!</h2>
+                                <h1>¡Bienvenidos!</h1>
                                 <p>
                                     En Digisalud unimos a través <br>
                                     de la teconología como <br>
@@ -224,19 +223,19 @@ include $url . 'config_bto.php';
                 <!--/SECCION IZQUIERDA-->
 
                 <!--SECCION DERECHA FORMULARIO-->
-                <div class="col-md-6 dig-backg-white p-5">
+                <div id="dig-section-right" class="col-md-6 dig-backg-white">
                     <div class="container">
                         <div class="row justify-content-md-center">
                             <div class="col-md-10">
-                                <h3 class="font-weight-bold">Iniciar Sesión</h3>
+                                <h2 class="font-weight-bold">Iniciar Sesión</h2>
                             </div>
 
                             <div class="col-md-10">
                                 <div class="md-form">
-                                    <input type="email" id="l_email" class="form-control form-control-sm bto-error-line" autocomplete="off">
                                     <label for="inputSMEx">Correo electronico</label>
+                                    <input type="email" id="l_email" class="form-control form-control-sm bto-error-line" autocomplete="off">
                                     <div class="div-validador">
-                                        <div class="bto-validator bto-error">Correo electrónico no registrado<span class="pull-right fas fa-exclamation-triangle"></span></div>
+                                        <div class="bto-validator">&nbsp;</div>
                                     </div>
                                 </div>
                             </div>
@@ -247,22 +246,23 @@ include $url . 'config_bto.php';
                                         <div class="view-pass">
                                             <i class="fas fa-eye"></i>
                                         </div>
-                                        <input type="password" id="l_password" class="form-control form-control-sm" autocomplete="off">
                                         <label for="l_password">Contraseña</label>
+                                        <input type="password" id="l_password" class="form-control form-control-sm" autocomplete="off">
+                                        <div class="div-validador">
+                                            <div class="bto-validator">&nbsp;</div>
+                                        </div>
                                     </div>
 
-                                    <div class="div-validador">
-                                        <div class="bto-validator"></div>
-                                    </div>
+
                                 </div>
                             </div>
 
-                            <div class="col-md-10">
+                            <div id="miss_pass" class="col-md-10">
                                 <small><a href="#">¿olvidaste tu contraseña?</a></small>
                             </div>
 
-                            <div class="col-md-10 pt-5 pb-5">
-                                <button id="l_entrar" class="btn btn-dig-blue">ENTRAR</button>  
+                            <div class="col-md-10 pt-4 pb-4">
+                                <button id="l_entrar" class="btn btn-dig-blue" disabled="disabled">ENTRAR</button>  
                             </div>
 
                             <div class="col-md-10">
@@ -282,7 +282,7 @@ include $url . 'config_bto.php';
                                 </div>
                             </div>
 
-                            <div class="col-md-10 pt-2 pb-4">
+                            <div id="terms-priva" class="col-md-10 pt-2 pb-4">
                                 <div class="row">
                                     <div class="col-7">
                                         <a href="#">Términos y políticas de privacidad</a>
@@ -323,17 +323,37 @@ include $url . 'config_bto.php';
 
             $("#div-oculto, .action-close-pop").on("click", function () {
                 $("#div-oculto").removeClass("body-oscurecer");
-                $(".digi-menu").addClass("ocultar-pop");
-                $(".digi-popup").addClass("ocultar-pop");
-                $(".body-section-conexion").addClass("ocultar-pop");
+                $(".digi-modal").addClass("ocultar-pop");
             });
 
+//  
             $(".campo-pass .view-pass").on("click", function () {
                 var campo = $(this).parent().find("input");
                 if (campo.attr("type") == "text") {
                     campo.attr("type", "password");
                 } else {
                     campo.attr("type", "text");
+                }
+            });
+
+            // EVENTOS PARA LA DEMO DEL MODULO 1
+            $("#l_email").on("keyup", function () {
+                console.log($(this).next(".div-validador").text());
+                if ($(this).val() == '') {
+                    $(this).next(".div-validador").children().html('Correo electrónico no registrado<span class="pull-right fas fa-exclamation-triangle"></span>').addClass("bto-error");
+                    $(this).addClass("bto-error-line");
+                } else {
+                    $(this).removeClass("bto-error-line");
+                    $(this).next(".div-validador").children().html("").removeClass("bto-error");
+                }
+            });
+            $("#l_password").on("keyup", function () {
+                if ($(this).val() == '') {
+                    $(this).next(".div-validador").children().html('La Contraseña no es correcta<span class="pull-right fas fa-exclamation-triangle"></span>').addClass("bto-error");
+                    $(this).addClass("bto-error-line");
+                } else {
+                    $(this).removeClass("bto-error-line");
+                    $(this).next(".div-validador").children().html("").removeClass("bto-error");
                 }
             });
         </script>
