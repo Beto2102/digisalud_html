@@ -1,0 +1,283 @@
+/* 
+    Created on : 19/11/2018, 08:43:44 AM
+    Author     : Alberto De Jesus
+    PageWeb    : https://btowebsolutions.com
+*/
+
+.bto-calendar{
+    width: 100%;
+}
+.controls-calendar{
+    float: left;
+    font-size: 20px;
+    margin-right: 10px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+.controls-calendar svg{
+    cursor: pointer;
+}
+.bto-header-month-label{
+    font-size: 17px;
+    display: inline-block;
+    padding-right: 20px;
+    font-weight: bold;
+}
+.bto-header-month-label + a{
+    padding-right: 5px;
+}
+.bto-header-month-label + a.active, .bto-header-month-label + a:hover{
+    padding-right: 10px;
+    color:#2e7de1!important;
+}
+@media only screen and (min-width:767px) {
+    .controls-calendar{
+        font-size: 25px;
+    }
+    .bto-header-month-label{
+        font-size: 24px;
+    }
+    .bto-header-month-label + a{
+        padding-right: 10px;
+    }
+}
+
+/* POR MES */
+.bto-days{
+    border:1px solid #ced4da;
+    position: relative;
+    overflow: hidden;
+}
+.bto-day{
+    float:left;
+    width: 14.285714285714286%!important;
+    height: 90px;
+    border:1px solid #ced4da;
+    position: relative;
+    text-align: center;
+}
+.bto-day.expired .bto-day-activity{
+    opacity:0.3;
+}
+.bto-day .bto-day-number{
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    font-size: 15px;
+    font-weight: bold;
+    height: 1px;
+}
+.bto-day.today,.bto-day-week-content.today {
+    background: #f5f5f5;
+}
+.bto-day.today .bto-day-number{
+    background: #2e7de1;
+    border-radius: 50%;
+    color:#fff;
+    text-align: center;
+    font-weight: 500;
+    width: 22px;
+    height: 22px;
+    padding-right: 2px;
+}
+.bto-day-content{
+    padding-top: 30px;
+}
+.bto-day-activity{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis!important;
+    /*padding: 2px 0px;*/
+    padding: 1px;
+    color:#fff;
+    font-family: ProximaNovaAltRegular;
+    font-size: 9px;
+}
+.bto-day-activity a:link,.bto-day-activity a { 
+    color:#fff;
+    /*font-size: 13px;*/
+    text-decoration:none; 
+} 
+.bto-day-activity div{
+    padding: 1px;
+}
+.bto-day-activity-blue{
+    background: #09429b;
+}
+.bto-day-activity-blue-light{
+    background: #2e7de1;
+}
+.bto-day-activity-legende,.bto-day-activity-legende a{
+    color:#4f4f4f!important;
+    padding: 0px!important;
+    font-size:9px;
+}
+.bto-day-activity-silver{
+    border:2px solid #ced4da;
+}
+.bto-type-month.active, .bto-type-week.active{
+    padding-right: 10px;
+    color:#2e7de1!important;
+}
+.bto-day.primeros{
+    height: 100px;
+}
+.bto-day.primeros .bto-day-number{
+    top: 15px;
+}
+.bto-day.primeros .bto-day-content{
+    padding-top: 35px;
+}
+.bto-day .bto-day-legend{
+    position: absolute;
+    top: 0px; left: 0; bottom: 0; right: 0;
+    /*top: 2px;*/
+    /*left: 8px;*/
+    /*padding: 1px 6px;*/
+    font-size: 14px;
+    display: none;
+    color:#bcc1c5;
+}
+.bto-day.primeros .bto-day-legend{
+    display: block;
+}
+.bto-day-legend.active{
+    color: #2e7de1!important;
+}
+@media only screen and (min-width:767px) {
+    .bto-day-content{
+        padding-top: 35px;
+    }
+    .bto-day{
+        height: 170px;
+        padding: 5px;
+        text-align: left;
+
+    }
+    .bto-day.today .bto-day-number{
+        width: 25px;
+        height: 25px;
+        padding-right: 7px;
+    }
+    .bto-day.primeros{
+        height: 190px;
+    }
+    .bto-day .bto-day-number{
+        top: 10px;
+        left: 10px;
+        padding: 1px 6px;
+        height: 1px;
+    }
+    .bto-day-activity-legende,.bto-day-activity-legende a{
+        font-size:15px;
+    }
+    .bto-day .bto-day-legend{
+        top: 2px;
+        left: 8px;
+        padding: 1px 6px;
+        font-size: 22px;
+    }
+    .bto-day.primeros .bto-day-number{
+        top: 30px;
+    }
+    .bto-day.primeros .bto-day-content{
+        padding-top: 55px;
+    }
+    .bto-day-activity{
+        padding: 2px 0px;
+        font-size: 14px;
+    }
+    .bto-day-activity div{
+        padding: 4px 10px;
+    }
+    .bto-day.today .bto-day-number{
+
+    }
+}
+
+/* POR SEMANA */
+.bto-day-week{
+    position: relative;
+    float:left;
+    width: 14.285714285714286%!important;
+    height: 40px;
+    border:1px solid #ced4da;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis!important;
+    text-align: center;
+}
+.bto-day.expired .bto-day-activity{
+    opacity:0.3;
+}
+.bto-day-week .bto-day-number{
+    position: absolute;
+    top: 15px; left: 0; bottom: 0; right: 0;
+    font-size: 15px;
+}
+.bto-day-week .bto-day-legend{
+    position: absolute;
+    top: 0; left: 0; bottom: 0px; right: 0;
+    font-size: 15px;
+    color:#bcc1c5;
+}
+.bto-day-week.today .bto-day-number,.bto-day-week.today .bto-day-legend{
+    color: #2e7de1;
+    background: transparent;
+}
+.bto-day-week.today {
+    background: #f5f5f5;
+}
+.bto-day-week-content{
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis!important;
+    float:left;
+    width: 14.285714285714286%!important;
+    height: 21px;
+    border:1px solid #ced4da;
+    font-family: ProximaNovaAltRegular;
+    font-size: 8px; 
+    color:#fff;
+    padding: 3px 1px;
+}
+.bto-day-week-content-wrap{
+    padding: 2px 1px 0px;
+}
+.bto-day-week-content-wrap.expired{
+    opacity:0.3;
+}
+@media only screen and (min-width:767px) {
+    .bto-day-week{
+        height: 85px;
+        padding: 5px;
+        text-align: left;
+    }
+    .bto-day-week .bto-day-number{
+        top:auto;
+        left: 5px;
+        padding: 1px 6px;
+        font-size: 35px;
+    }
+    .bto-day-week .bto-day-legend{
+        left: 5px;
+        padding: 1px 5px;
+        font-size: 27px;
+    }
+    .bto-day-week-content{
+        height: 50px;
+        padding: 10px 5px;
+        font-size: 14px; 
+    }
+    .bto-day-week-content-wrap{
+        padding: 3px 5px;
+        height: 100%;
+    }
+    .bto-day-week-content-wrap.expired{
+        opacity:0.3;
+    }
+}

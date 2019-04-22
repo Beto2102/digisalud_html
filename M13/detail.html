@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Modulo 13</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../lib/MDB-Free/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../lib/MDB-Free/css/mdb.min.css" />
+    <link rel="stylesheet" href="../lib/fontawesome-free-5.2.0-web/css/all.min.css" />
+    <link rel="stylesheet" href="../bto/css/style.css" />
+    <link rel="stylesheet" href="../lib/datepicker/datepicker.min.css" />
+    <link rel="stylesheet" href="mod13.css" />
+</head>
+
+<body class="">
+
+    <!-- Menu -->
+    <div id="div-oculto"></div>
+    <div id="digi-menu-log">
+        <!-- MENU DESPLEGABLE -->
+        <div class="digi-modal digi-menu ocultar-pop">
+            <div class="action-close-pop icon-white">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <div class="digi-cont-top digi-menu-header dig-deg-blue">
+                <div>
+                    <img class="img-fluid" src="../bto/digisalud-logo.png" alt="Digisalud">
+                </div>
+            </div>
+            <div class="digi-menu-body">
+                <!--ITEM 1-->
+                <div class="digi-menu-item">
+                    <div class="digi-menu-item-label">
+                        Acerca de
+                        <img class="pull-right" src="../bto/images/icon/Icon_arrow_normal.png" alt="icon" />
+                    </div>
+                    <div class="digi-menu-sub digi-menu-hide">
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Digisalud
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item active">
+                            <div class="digi-menu-sub-item-label">
+                                Preguntas Frecuentes
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Términos de Uso y Políticas de <br> Privacidad
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Contacto
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Comparte
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--ITEM 2-->
+                <div class="digi-menu-item">
+                    <div class="digi-menu-item-label">
+                        Otro item del menu
+                        <img class="pull-right" src="../bto/images/icon/Icon_arrow_normal.png" alt="icon" />
+                    </div>
+                    <div class="digi-menu-sub digi-menu-hide">
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Sub menú 1
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Sub menú 2
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Sub menú 3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /MENU DESPLEGABLE -->
+
+        <!-- MENU DESPLEGABLE PROFILE -->
+        <div class="digi-modal digi-menu-prof ocultar-pop">
+            <div class="digi-cont-top digi-menu-header dig-deg-blue">
+                <div class="section-pr-name">
+                    <h2>Alberto De Jesus</h2>
+                    <p>Psicólogo</p>
+                </div>
+                <div class="section-profile closet">
+                    <img class="arrow-profile action-close-pop-prof" src="../bto/images/icon/arrow_top.png"
+                        alt="Profile" />
+                    <img class="photo-profile" src="../bto/images/icon/register.png" alt="Profile" />
+                </div>
+            </div>
+
+            <div class="digi-menu-body-prof">
+                <div class="digi-menu-sub-prof">
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="edit_profile.html">Editar perfil</a>
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="#">Mis jornadas</a>
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="#">Configuración</a>
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="#">Ayuda</a>
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="#">Cerrar sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /MENU DESPLEGABLE PROFILE -->
+
+        <!-- notificacion pop up-->
+        <div class="digi-modal digi-popup body-section-notification ocultar-pop">
+            <div class="container-fluid">
+                <div class="row ">
+
+                    <div class="action-close-pop">
+                        <i class="fas fa-times"></i>
+                    </div>
+
+                    <div class="col-md-12 text-center font-weight-bold pb-3">
+                        <h5>Notificaciónes <span>9</span></h5>
+                    </div>
+
+                    <div class="col-md-12 notifications-popup">
+                        <div class="notification-popup">
+                            <p><b>Elise Beaucome </b> - Nuevo registro</p>
+                        </div>
+                        <div class="notification-popup">
+                            <p><b>Nueva Jornada </b> - Asignar roles</p>
+                        </div>
+                        <div class="notification-popup">
+                            <p><b>Nueva Jornada </b> - Colegio Maria Carlota</p>
+                        </div>
+                        <div class="notification-popup">
+                            <p><b>Jornada </b> - 10.12.2018 - Petare</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 pt-5 pb-2 text-center">
+                        <button class="btn btn-dig-blue">Ver todas</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /notificacion pop up-->
+
+        <!-- MENU items -->
+        <header class="header-digisalud dig-deg-blue">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="section-menu">
+                            <img class="bto-icons-tam" src="../bto/images/icon/Icon_menu.png" alt="Digisalud" />
+                        </div>
+                        <div class="section-back">
+                            <img class="bto-icons-tam" src="../bto/images/icon/Icon_Back.png" alt="Digisalud" />
+                        </div>
+                        <div class="section-search d-none d-sm-block">
+                            <div class="inner-addon left-addon">
+                                <div><i class="fas fa-search"></i></div>
+                                <input type="search" class="col-md-12" placeholder="Búsqueda" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="logo-prof">
+                        <div class="section-logo-log text-center">
+                            <img src="../bto/Isotipo_digisalud.png" alt="Digisalud">
+                        </div>
+                    </div>
+
+                    <div class="col-6 text-right">
+                        <div class="section-profile open">
+                            <img class="arrow-profile " src="../bto/images/icon/arrow_bottom.png" alt="Profile" />
+                            <img class="photo-profile" src="../bto/images/icon/register.png" alt="Profile" />
+                        </div>
+                        <div class="section-pr-name d-none d-sm-block">
+                            <h2>Alberto De Jesus</h2>
+                            <p>Psicólogo</p>
+                        </div>
+                        <div class="section-notification">
+                            <span>9</span>
+                            <img class="arrow-profile" src="../bto/images/icon/notification.png" alt="Profile" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <!-- /MENU items -->
+
+    </div>
+    <!-- /Menu -->
+
+    <!-- CONTENIDO -->
+    <div id="sectionM13detail" class="dig-backg-texture">
+
+        <!-- SECCION IZQUIERDA-->
+        <div id="windows-left" class="bag-silver">
+            <!-- FILTROS -->
+            <div class="container p-5 prim">
+                <div class="row">
+                    <div class="col-12 pb-5">
+                        <h2 class="font-weight-bold name_search">Busca tu usuario</h2>
+                        <span>FILTRO(S)</span>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="md-form mt-0">
+                            <label for="m13_1">Palabra clave</label>
+                            <input type="text" id="m13_1" class="form-control form-control-sm" autocomplete="off">
+                            <div class="div-validador">
+                                <div class="bto-validator">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="div_btns col-12 pt-2">
+                        <button id="search" data-type="1" class="btn btn-dig-blue-inv">Buscar</button>
+                        <button id="print" class="ml-4 btn btn-dig-blue-inv">Imprimir</button>
+                        <button id="return" class="ml-4 btn btn-dig-blue-inv">Volver</button>
+                    </div>
+                </div>
+            </div>
+            <!-- /FILTROS -->
+            <!-- Resultados -->
+            <div class="container">
+
+                <!-- Sin Busqueda -->
+                <div class="row text-center pt-5 pb-5 dont-search">
+                    <div class="col-12">
+                        <img src="../bto/images/icon/search-blue.png" />
+                    </div>
+                    <div class="col-12 pt-4">
+                        <h3 class="text-dig-silver-light">Busca tu <span class="text-dig-blue-light">Usuario</span><br>
+                        </h3>
+                    </div>
+                </div>
+                <!-- /Sin Busqueda -->
+
+                <!-- Tarjetas buscadas -->
+                <div id="response-search" class="row">
+                </div>
+                <!-- /Tarjetas buscadas -->
+
+            </div>
+            <!-- /Resultados -->
+        </div>
+        <!-- /SECCION IZQUIERDA-->
+
+        <!-- SECCION DER-->
+        <div id="windows-right">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-12">
+                        <h2 class="pt-5">Jornada Miranda Salud</h2>
+                        <h3>Digisalud</h3>
+                    </div>
+                    <div class="col-12 pb-5">
+                        <label>Pesquisas</label>
+                        <div class="new-pesquisas">
+                            <img src="../bto/images/pesq/sgv.png" />
+                            <img src="../bto/images/pesq/ant.png" />
+                            <img src="../bto/images/pesq/vis.png" />
+                            <img src="../bto/images/pesq/san.png" />
+                            <img src="../bto/images/pesq/meg.png" />
+                            <img src="../bto/images/pesq/vac.png" />
+                            <img src="../bto/images/pesq/lab.png" />
+                            <img src="../bto/images/pesq/aud.png" />
+                            <img src="../bto/images/pesq/ort.png" />
+                            <img src="../bto/images/pesq/odt.png" />
+                        </div>
+                    </div>
+                    <div class="col-12 pb-3">
+                        <label>Ubicación</label>
+                        <p>Av. Los Palos grandes, edificio 24, primera planta. Caracas, Venezuela. CP 20006.</p>
+                    </div>
+                    <div class="col-md-6 pb-3">
+                        <label>Fecha inicio</label>
+                        <p>22 - 10 - 2009</p>
+                    </div>
+                    <div class="col-md-6 pb-3">
+                        <label>Fecha Fin</label>
+                        <p>24 - 10 - 2009</p>
+                    </div>
+
+                    <section class="col-md-12 pb-3 asignate">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Turnos (4)</label>
+                                <div class="round">
+                                    <input type="checkbox" id="turn_1" />
+                                    <label for="turn_1"></label>
+                                    <span>7:00 a 14:00 <span>22/10</span></span>
+                                </div>
+                                <div class="round">
+                                    <input type="checkbox" id="turn_2" />
+                                    <label for="turn_2"></label>
+                                    <span>7:00 a 14:00 <span>23/10</span></span>
+                                </div>
+                                <div class="round">
+                                    <input type="checkbox" id="turn_3" />
+                                    <label for="turn_3"></label>
+                                    <span>7:00 a 14:00 <span>24/10</span></span>
+                                </div>
+                                <div class="round">
+                                    <input type="checkbox" id="turn_4" />
+                                    <label for="turn_4"></label>
+                                    <span>15:00 a 21:00 <span>24/10</span></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Rol (es)</label>
+                                <div class="round">
+                                    <input type="checkbox" id="rol_1" />
+                                    <label for="rol_1"></label>
+                                    <span>Coordinador</span>
+                                </div>
+                                <div class="round">
+                                    <input type="checkbox" id="rol_2" />
+                                    <label for="rol_2"></label>
+                                    <span>Registrador</span>
+                                </div>
+                                <div class="round">
+                                    <input type="checkbox" id="rol_3" />
+                                    <label for="rol_3"></label>
+                                    <span>Evaluador</span>
+                                </div>
+                                <div class="round">
+                                    <input type="checkbox" id="rol_4" />
+                                    <label for="rol_4"></label>
+                                    <span>Data</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="col-md-12 pb-3 asignate_do">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Turnos (4)</label>
+                                <div class="round">
+                                    <input type="checkbox" id="turn_11" checked />
+                                    <label for="turn_11"></label>
+                                    <span>7:00 a 14:00 <span>22/10</span></span>
+                                </div>
+                                <div class="round">
+                                    <input type="checkbox" id="turn_22" />
+                                    <label for="turn_22"></label>
+                                    <span>7:00 a 14:00 <span>23/10</span></span>
+                                </div>
+                                <div class="round">
+                                    <input type="checkbox" id="turn_33" checked />
+                                    <label for="turn_33"></label>
+                                    <span>7:00 a 14:00 <span>24/10</span></span>
+                                </div>
+                                <div class="round">
+                                    <input type="checkbox" id="turn_44" />
+                                    <label for="turn_44"></label>
+                                    <span>15:00 a 21:00 <span>24/10</span></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Rol (es)</label>
+                                <div class="round">
+                                    <input type="checkbox" id="rol_11" />
+                                    <label for="rol_11"></label>
+                                    <span>Coordinador</span>
+                                </div>
+                                <div class="round">
+                                    <input type="checkbox" id="rol_22" checked />
+                                    <label for="rol_22"></label>
+                                    <span>Registrador</span>
+                                </div>
+                                <div class="round">
+                                    <input type="checkbox" id="rol_33" checked />
+                                    <label for="rol_33"></label>
+                                    <span>Evaluador</span>
+                                </div>
+                                <div class="round">
+                                    <input type="checkbox" id="rol_44" />
+                                    <label for="rol_44"></label>
+                                    <span>Data</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <div class="col-md-6 pb-3">
+                        <label>Status</label>
+                        <p>En Marcha</p>
+                    </div>
+                    <div class="col-md-6 pb-3">
+                        <label>N de beneficiarios</label>
+                        <p>180</p>
+                    </div>
+                    <div class="col-12 pb-5">
+                        <div class="new-indicator">
+                            <div class="title">
+                                <label>Planificados</label>
+                            </div>
+                            <div class="cuadro bg-dig-purple">
+                                20
+                            </div>
+                        </div>
+                        <div class="new-indicator">
+                            <div class="title">
+                                <label>Voluntarios</label>
+                            </div>
+                            <div class="cuadro bg-dig-green-light">
+                                16
+                            </div>
+                            <div class="text-center mt-3">
+                                <button id="show1" class="btn btn-dig-blue-inv">ver</button>
+                            </div>
+                        </div>
+                        <div class="new-indicator">
+                            <div class="title">
+                                <label>Voluntarios por confirmar</label>
+                            </div>
+                            <div class="cuadro bg-dig-orange">
+                                4
+                            </div>
+                            <div class="text-center mt-3">
+                                <button id="show2" class="btn btn-dig-blue-inv">ver</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /SECCION DER-->
+
+    </div>
+    <!--/CONTENIDO-->
+
+    <script type="text/javascript" src="../lib/MDB-Free/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../lib/MDB-Free/js/popper.min.js"></script>
+    <script type="text/javascript" src="../lib/MDB-Free/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../lib/MDB-Free/js/mdb.min.js"></script>
+    <script type="text/javascript" src="../lib/datepicker/datepicker.min.js"></script>
+    <script type="text/javascript" src="../lib/datepicker/datepicker.lang.es.js"></script>
+    <script type="text/javascript" src="../lib/fontawesome-free-5.2.0-web/js/all.min.js"></script>
+    <script type="text/javascript" src="../lib/maskinput/jquery.inputmask.bundle.js"></script>
+    <script type="text/javascript" src="../bto/js/bto_script.js"></script>
+    <script>
+        $(document).ready(function () {
+            digiModule13.detail();
+        });
+    </script>
+</body>
+
+</html>

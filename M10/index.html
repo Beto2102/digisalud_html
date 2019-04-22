@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Módulo 10</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../lib/MDB-Free/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/MDB-Free/css/mdb.min.css">
+    <link rel="stylesheet" href="../lib/fontawesome-free-5.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../bto/css/style.css">
+    <link rel="stylesheet" href="mod10.css">
+</head>
+
+<body class="">
+
+    <!-- DIV QUE OPACA LA PANTALLA-->
+    <div id="div-oculto"></div>
+    <!-- /DIV QUE OPACA LA PANTALLA-->
+    <div id="digi-menu-log">
+        <!-- MENU DESPLEGABLE -->
+        <div class="digi-modal digi-menu ocultar-pop">
+            <div class="action-close-pop icon-white">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <div class="digi-cont-top digi-menu-header dig-deg-blue">
+                <div>
+                    <img class="img-fluid" src="../bto/digisalud-logo.png" alt="Digisalud">
+                </div>
+            </div>
+            <div class="digi-menu-body">
+                <!--ITEM 1-->
+                <div class="digi-menu-item">
+                    <div class="digi-menu-item-label">
+                        Acerca de
+                        <img class="pull-right" src="../bto/images/icon/Icon_arrow_normal.png" alt="icon" />
+                    </div>
+                    <div class="digi-menu-sub digi-menu-hide">
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Digisalud
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item active">
+                            <div class="digi-menu-sub-item-label">
+                                Preguntas Frecuentes
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Términos de Uso y Políticas de <br> Privacidad
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Contacto
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Comparte
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--ITEM 2-->
+                <div class="digi-menu-item">
+                    <div class="digi-menu-item-label">
+                        Otro item del menu
+                        <img class="pull-right" src="../bto/images/icon/Icon_arrow_normal.png" alt="icon" />
+                    </div>
+                    <div class="digi-menu-sub digi-menu-hide">
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Sub menú 1
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Sub menú 2
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Sub menú 3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /MENU DESPLEGABLE -->
+
+        <!-- MENU DESPLEGABLE PROFILE -->
+        <div class="digi-modal digi-menu-prof ocultar-pop">
+            <div class="digi-cont-top digi-menu-header dig-deg-blue">
+                <div class="section-pr-name">
+                    <h2>Alberto De Jesus</h2>
+                    <p>Psicólogo</p>
+                </div>
+                <div class="section-profile closet">
+                    <img class="arrow-profile action-close-pop-prof" src="../bto/images/icon/arrow_top.png"
+                        alt="Profile" />
+                    <img class="photo-profile" src="../bto/images/icon/register.png" alt="Profile" />
+                </div>
+            </div>
+
+            <div class="digi-menu-body-prof">
+                <div class="digi-menu-sub-prof">
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="edit_profile.html">Editar perfil</a>
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="#">Mis jornadas</a>
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="#">Configuración</a>
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="#">Ayuda</a>
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="#">Cerrar sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /MENU DESPLEGABLE PROFILE -->
+
+        <!-- notificacion pop up-->
+        <div class="digi-modal digi-popup body-section-notification ocultar-pop">
+            <div class="container-fluid">
+                <div class="row ">
+
+                    <div class="action-close-pop">
+                        <i class="fas fa-times"></i>
+                    </div>
+
+                    <div class="col-md-12 text-center font-weight-bold pb-3">
+                        <h5>Notificaciónes <span>9</span></h5>
+                    </div>
+
+                    <div class="col-md-12 notifications-popup">
+                        <div class="notification-popup">
+                            <p><b>Elise Beaucome </b> - Nuevo registro</p>
+                        </div>
+                        <div class="notification-popup">
+                            <p><b>Nueva Jornada </b> - Asignar roles</p>
+                        </div>
+                        <div class="notification-popup">
+                            <p><b>Nueva Jornada </b> - Colegio Maria Carlota</p>
+                        </div>
+                        <div class="notification-popup">
+                            <p><b>Jornada </b> - 10.12.2018 - Petare</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 pt-5 pb-2 text-center">
+                        <button class="btn btn-dig-blue">Ver todas</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /notificacion pop up-->
+
+        <!-- MENU items -->
+        <header class="header-digisalud dig-deg-blue">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="section-menu">
+                            <img class="bto-icons-tam" src="../bto/images/icon/Icon_menu.png" alt="Digisalud" />
+                        </div>
+                        <div class="section-back">
+                            <img class="bto-icons-tam" src="../bto/images/icon/Icon_Back.png" alt="Digisalud" />
+                        </div>
+                        <div class="section-search d-none d-sm-block">
+                            <div class="inner-addon left-addon">
+                                <div><i class="fas fa-search"></i></div>
+                                <input type="search" class="col-md-12" placeholder="Búsqueda" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="logo-prof">
+                        <div class="section-logo-log text-center">
+                            <img src="../bto/Isotipo_digisalud.png" alt="Digisalud">
+                        </div>
+                    </div>
+
+                    <div class="col-6 text-right">
+                        <div class="section-profile open">
+                            <img class="arrow-profile " src="../bto/images/icon/arrow_bottom.png" alt="Profile" />
+                            <img class="photo-profile" src="../bto/images/icon/register.png" alt="Profile" />
+                        </div>
+                        <div class="section-pr-name d-none d-sm-block">
+                            <h2>Alberto De Jesus</h2>
+                            <p>Psicólogo</p>
+                        </div>
+                        <div class="section-notification">
+                            <span>9</span>
+                            <img class="arrow-profile" src="../bto/images/icon/notification.png" alt="Profile" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <!-- /MENU items -->
+
+    </div>
+
+    <div id="sectionM10">
+
+        <div id="sec_jornada">
+            <div class="jornada_img">
+                <img src="../bto/images/icon/register.png" />
+            </div>
+            <div class="jornada_content">
+
+                <div class="jornada_title">
+                    <h2>Jornada Miranda Salud</h2>
+                    <h5 class="text-dig-silver-light">Digisalud</h5>
+                </div>
+                <div class="jornada_values">
+                    <div class="jornada_val_item">
+                        <label class="text-dig-silver-light">Fecha incio</label>
+                        <p>22 - 10 - 2019</p>
+                    </div>
+                    <div class="jornada_val_item">
+                        <label class="text-dig-silver-light">Fecha fin</label>
+                        <p>22 - 10 - 2019</p>
+                    </div>
+                    <div class="jornada_val_item">
+                        <label class="text-dig-silver-light">Estatus</label>
+                        <p>En Marcha</p>
+                    </div>
+                    <div class="jornada_val_item">
+                        <label class="text-dig-silver-light">Pequisas</label>
+                        <div class="pesquisas">
+                            <img src="../bto/images/pesq/sgv.png" />
+                            <img src="../bto/images/pesq/ant.png" />
+                            <img src="../bto/images/pesq/vis.png" />
+                            <img src="../bto/images/pesq/san.png" />
+                            <img src="../bto/images/pesq/meg.png" />
+                            <img src="../bto/images/pesq/vac.png" />
+                            <img src="../bto/images/pesq/lab.png" />
+                            <img src="../bto/images/pesq/aud.png" />
+                            <img src="../bto/images/pesq/ort.png" />
+                            <img src="../bto/images/pesq/opt.png" />
+                            <img src="../bto/images/pesq/odt.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="sec_info">
+            <div class="info_wrap">
+                <div class="info_title">
+                    <img src="../bto/images/icon/Icon_benefciarios.png">
+                    <h2>Beneficiarios en Alerta</h2>
+                </div>
+                <div class="info_content">
+                    <div class="info_content_item">
+                        <div>
+                            <img src="../bto/images/icon/Icon_SignosVitales_B.png">
+                            <p>2000</p>
+                        </div>
+                        <button class="btn btn-dig-white">ver</button>
+                    </div>
+                    <div class="info_content_item">
+                        <div>
+                            <img src="../bto/images/icon/Icon_Antropometría_B.png">
+                            <p>2000</p>
+                        </div>
+                        <button class="btn btn-dig-white">ver</button>
+                    </div>
+                    <div class="info_content_item">
+                        <div>
+                            <img src="../bto/images/icon/Icon_Visual_B.png">
+                            <p>2000</p>
+                        </div>
+                        <button class="btn btn-dig-white">ver</button>
+                    </div>
+                    <div class="info_content_item">
+                        <div>
+                            <img src="../bto/images/icon/Icon_Sanguineo_B.png">
+                            <p>2000</p>
+                        </div>
+                        <button class="btn btn-dig-white">ver</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="sec_digcard">
+
+            <div class="digcard">
+                <div class="digcard_wrap">
+                    <div class="digcard_title">
+                        Reportes Ejecutivos
+                    </div>
+                    <div class="digcard_body">
+
+                        <div class="digicard_cont_opt type-sgv">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_icon"></div>
+                                    <div class="digicard_div_text">Signos Vitales</div>
+                                    <div class="digicard_div_btn">
+                                        <button class="btn btn-dig-blue-dark-inv">ver</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="digicard_cont_opt type-ant">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_icon"></div>
+                                    <div class="digicard_div_text">Antropometría</div>
+                                    <div class="digicard_div_btn">
+                                        <button class="btn btn-dig-blue-dark-inv">ver</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="digicard_cont_opt type-vis">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_icon"></div>
+                                    <div class="digicard_div_text">Visual</div>
+                                    <div class="digicard_div_btn">
+                                        <button class="btn btn-dig-blue-dark-inv">ver</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="digicard_cont_opt type-san">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_icon"></div>
+                                    <div class="digicard_div_text">Sanguíneo</div>
+                                    <div class="digicard_div_btn">
+                                        <button class="btn btn-dig-blue-dark-inv">ver</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="digicard_cont_opt type-meg">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_icon"></div>
+                                    <div class="digicard_div_text">Medicina General</div>
+                                    <div class="digicard_div_btn">
+                                        <button class="btn btn-dig-blue-dark-inv">ver</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="digicard_cont_opt type-vac">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_icon"></div>
+                                    <div class="digicard_div_text">Vacunación</div>
+                                    <div class="digicard_div_btn">
+                                        <button class="btn btn-dig-blue-dark-inv">ver</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="digicard_cont_opt type-lab">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_icon"></div>
+                                    <div class="digicard_div_text">Laboratorio</div>
+                                    <div class="digicard_div_btn">
+                                        <button class="btn btn-dig-blue-dark-inv">ver</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="digicard_cont_opt type-aud">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_icon"></div>
+                                    <div class="digicard_div_text">Auditiva</div>
+                                    <div class="digicard_div_btn">
+                                        <button class="btn btn-dig-blue-dark-inv">ver</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="digicard_cont_opt type-ort">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_icon"></div>
+                                    <div class="digicard_div_text">Ortopédica</div>
+                                    <div class="digicard_div_btn">
+                                        <button class="btn btn-dig-blue-dark-inv">ver</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="digicard_cont_opt type-opt">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_icon"></div>
+                                    <div class="digicard_div_text">Óptica</div>
+                                    <div class="digicard_div_btn">
+                                        <button class="btn btn-dig-blue-dark-inv">ver</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="digicard_cont_opt type-odt">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_icon"></div>
+                                    <div class="digicard_div_text">Odontológia</div>
+                                    <div class="digicard_div_btn">
+                                        <button class="btn btn-dig-blue-dark-inv">ver</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="digcard">
+                <div class="digcard_wrap">
+                    <div class="digcard_title">
+                        Reportes Detallados
+                    </div>
+                    <div class="digcard_body">
+
+                        <!-- ITEM 1 -->
+                        <div class="type-collap collapsed digicard_cont_opt type-sgv" data-toggle="collapse"
+                            href="#colapSgv" role="button" aria-expanded="false" aria-controls="colapSgv">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_icon"></div>
+                                    <div class="digicard_div_text">Signos Vitales</div>
+                                    <div class="digicard_div_btn arrow">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse div-collapse" id="colapSgv">
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">Adultos</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">niños</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">bebés</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">embarazadas</button>
+                            </a>
+
+                        </div>
+                        <!-- /ITEM 1 -->
+
+                        <!-- ITEM 2 -->
+                        <div class="type-collap collapsed digicard_cont_opt type-ant" data-toggle="collapse"
+                            href="#colapAnt" role="button" aria-expanded="false" aria-controls="colapAnt">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_icon"></div>
+                                    <div class="digicard_div_text">Antropometría</div>
+                                    <div class="digicard_div_btn arrow">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse div-collapse" id="colapAnt">
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">Adultos</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">niños</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">bebés</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">embarazadas</button>
+                            </a>
+                        </div>
+                        <!-- /ITEM 2 -->
+
+                        <!-- ITEM 3 -->
+                        <div class="type-collap collapsed digicard_cont_opt type-vis" data-toggle="collapse"
+                            href="#colapvis" role="button" aria-expanded="false" aria-controls="colapvis">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_icon"></div>
+                                    <div class="digicard_div_text">Visual</div>
+                                    <div class="digicard_div_btn arrow">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse div-collapse" id="colapvis">
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">Adultos</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">niños</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">bebés</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">embarazadas</button>
+                            </a>
+
+                        </div>
+                        <!-- /ITEM 3 -->
+
+                        <!-- ITEM 4 -->
+                        <div class="type-collap collapsed digicard_cont_opt type-san" data-toggle="collapse"
+                            href="#colapsan" role="button" aria-expanded="false" aria-controls="colapsan">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_icon"></div>
+                                    <div class="digicard_div_text">Sanguíneo</div>
+                                    <div class="digicard_div_btn arrow">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse div-collapse" id="colapsan">
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">Adultos</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">niños</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">bebés</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">embarazadas</button>
+                            </a>
+                        </div>
+                        <!-- /ITEM 4 -->
+
+                        <!-- ITEM 5 -->
+                        <div class="type-collap collapsed digicard_cont_opt type-meg" data-toggle="collapse"
+                            href="#colapmeg" role="button" aria-expanded="false" aria-controls="colapmeg">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_icon"></div>
+                                    <div class="digicard_div_text">Medicina General</div>
+                                    <div class="digicard_div_btn arrow">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse div-collapse" id="colapmeg">
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">Adultos</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">niños</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">bebés</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">embarazadas</button>
+                            </a>
+                        </div>
+                        <!-- /ITEM 5 -->
+
+                        <!-- ITEM 6 -->
+                        <div class="type-collap collapsed digicard_cont_opt type-vac" data-toggle="collapse"
+                            href="#colapvac" role="button" aria-expanded="false" aria-controls="colapvac">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_icon"></div>
+                                    <div class="digicard_div_text">Vacunación</div>
+                                    <div class="digicard_div_btn arrow">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse div-collapse" id="colapvac">
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">Adultos</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">niños</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">bebés</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">embarazadas</button>
+                            </a>
+                        </div>
+                        <!-- /ITEM 6 -->
+
+                        <!-- ITEM 7 -->
+                        <div class="type-collap collapsed digicard_cont_opt type-lab" data-toggle="collapse"
+                            href="#colaplab" role="button" aria-expanded="false" aria-controls="colaplab">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_icon"></div>
+                                    <div class="digicard_div_text">Laboratorio</div>
+                                    <div class="digicard_div_btn arrow">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse div-collapse" id="colaplab">
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">Adultos</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">niños</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">bebés</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">embarazadas</button>
+                            </a>
+                        </div>
+                        <!-- /ITEM 7 -->
+
+                        <!-- ITEM 8 -->
+                        <div class="type-collap collapsed digicard_cont_opt type-aud" data-toggle="collapse"
+                            href="#colapaud" role="button" aria-expanded="false" aria-controls="colapaud">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_icon"></div>
+                                    <div class="digicard_div_text">Auditiva</div>
+                                    <div class="digicard_div_btn arrow">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse div-collapse" id="colapaud">
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">Adultos</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">niños</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">bebés</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">embarazadas</button>
+                            </a>
+                        </div>
+                        <!-- /ITEM 8 -->
+
+                        <!-- ITEM 9 -->
+                        <div class="type-collap collapsed digicard_cont_opt type-ort" data-toggle="collapse"
+                            href="#colaport" role="button" aria-expanded="false" aria-controls="colaport">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_icon"></div>
+                                    <div class="digicard_div_text">Ortopédica</div>
+                                    <div class="digicard_div_btn arrow">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse div-collapse" id="colaport">
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">Adultos</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">niños</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">bebés</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">embarazadas</button>
+                            </a>
+                        </div>
+                        <!-- /ITEM 9 -->
+
+                        <!-- ITEM 10 -->
+                        <div class="type-collap collapsed digicard_cont_opt type-opt" data-toggle="collapse"
+                            href="#colapopt" role="button" aria-expanded="false" aria-controls="colapopt">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_icon"></div>
+                                    <div class="digicard_div_text">Óptica</div>
+                                    <div class="digicard_div_btn arrow">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse div-collapse" id="colapopt">
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">Adultos</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">niños</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">bebés</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">embarazadas</button>
+                            </a>
+                        </div>
+                        <!-- /ITEM 10 -->
+
+                        <!-- ITEM 10 -->
+                        <div class="type-collap collapsed digicard_cont_opt type-odt" data-toggle="collapse"
+                            href="#colapOdt" role="button" aria-expanded="false" aria-controls="colapOdt">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_icon"></div>
+                                    <div class="digicard_div_text">Odontológia</div>
+                                    <div class="digicard_div_btn arrow">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse div-collapse" id="colapOdt">
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">Adultos</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">niños</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">bebés</button>
+                            </a>
+                            <a href="#">
+                                <button class="btn btn-dig-blue-dark-inv">embarazadas</button>
+                            </a>
+                        </div>
+                        <!-- /ITEM 10 -->
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="digcard">
+                <div class="digcard_wrap">
+                    <div class="digcard_title">
+                        Otros
+                    </div>
+                    <div class="digcard_body">
+
+                        <div class="digicard_cont_opt type-otros">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_text">
+                                        Reportes de datos personales
+                                    </div>
+                                    <div class="digicard_div_btn">
+                                        <button class="btn btn-dig-blue-dark-inv">ver</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="digicard_cont_opt type-otros">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_text">
+                                        Encuesta nutricional
+                                    </div>
+                                    <div class="digicard_div_btn">
+                                        <button class="btn btn-dig-blue-dark-inv">ver</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="digicard_cont_opt type-otros">
+                            <div class="digicard_body_opt_wrp">
+                                <div class="digicard_body_opt ">
+                                    <div class="digicard_div_text">
+                                        Otros reportes
+                                    </div>
+                                    <div class="digicard_div_btn">
+                                        <button class="btn btn-dig-blue-dark-inv">ver</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--/CONTENIDO-->
+
+    <script type="text/javascript" src="../lib/MDB-Free/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../lib/MDB-Free/js/popper.min.js"></script>
+    <script type="text/javascript" src="../lib/MDB-Free/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../lib/MDB-Free/js/mdb.min.js"></script>
+    <script type="text/javascript" src="../lib/fontawesome-free-5.2.0-web/js/all.min.js"></script>
+    <script type="text/javascript" src="../bto/js/bto_script.js"></script>
+    <script>
+        $(document).ready(function () {
+            digiModule10.main();
+        });
+    </script>
+</body>
+
+</html>

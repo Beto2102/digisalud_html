@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Modulo 6</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../lib/MDB-Free/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/MDB-Free/css/mdb.min.css">
+    <link rel="stylesheet" href="../lib/fontawesome-free-5.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../bto/css/style.css">
+    <link rel="stylesheet" href="../lib/datepicker/datepicker.min.css">
+</head>
+
+<body class="">
+
+    <!-- DIV QUE OPACA LA PANTALLA-->
+    <div id="div-oculto"></div>
+    <!-- /DIV QUE OPACA LA PANTALLA-->
+
+    <div id="digi-menu-log">
+        <!-- MENU DESPLEGABLE -->
+        <div class="digi-modal digi-menu ocultar-pop">
+            <div class="action-close-pop icon-white">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <div class="digi-cont-top digi-menu-header dig-deg-blue">
+                <div>
+                    <img class="img-fluid" src="../bto/digisalud-logo.png" alt="Digisalud">
+                </div>
+            </div>
+            <div class="digi-menu-body">
+                <!--ITEM 1-->
+                <div class="digi-menu-item">
+                    <div class="digi-menu-item-label">
+                        Acerca de
+                        <img class="pull-right" src="../bto/images/icon/Icon_arrow_normal.png" alt="icon" />
+                    </div>
+                    <div class="digi-menu-sub digi-menu-hide">
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Digisalud
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item active">
+                            <div class="digi-menu-sub-item-label">
+                                Preguntas Frecuentes
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Términos de Uso y Políticas de <br> Privacidad
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Contacto
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Comparte
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--ITEM 2-->
+                <div class="digi-menu-item">
+                    <div class="digi-menu-item-label">
+                        Otro item del menu
+                        <img class="pull-right" src="../bto/images/icon/Icon_arrow_normal.png" alt="icon" />
+                    </div>
+                    <div class="digi-menu-sub digi-menu-hide">
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Sub menú 1
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Sub menú 2
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Sub menú 3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /MENU DESPLEGABLE -->
+
+        <!-- MENU DESPLEGABLE PROFILE -->
+        <div class="digi-modal digi-menu-prof ocultar-pop">
+            <div class="digi-cont-top digi-menu-header dig-deg-blue">
+                <div class="section-pr-name">
+                    <h2>Alberto De Jesus</h2>
+                    <p>Psicólogo</p>
+                </div>
+                <div class="section-profile closet">
+                    <img class="arrow-profile action-close-pop-prof" src="../bto/images/icon/arrow_top.png"
+                        alt="Profile" />
+                    <img class="photo-profile" src="../bto/images/icon/register.png" alt="Profile" />
+                </div>
+            </div>
+
+            <div class="digi-menu-body-prof">
+                <div class="digi-menu-sub-prof">
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="edit_profile.html">Editar perfil</a>
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="#">Mis jornadas</a>
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="#">Configuración</a>
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="#">Ayuda</a>
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="#">Cerrar sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /MENU DESPLEGABLE PROFILE -->
+
+        <!-- notificacion pop up-->
+        <div class="digi-modal digi-popup body-section-notification ocultar-pop">
+            <div class="container-fluid">
+                <div class="row ">
+
+                    <div class="action-close-pop">
+                        <i class="fas fa-times"></i>
+                    </div>
+
+                    <div class="col-md-12 text-center font-weight-bold pb-3">
+                        <h5>Notificaciónes <span>9</span></h5>
+                    </div>
+
+                    <div class="col-md-12 notifications-popup">
+                        <div class="notification-popup">
+                            <p><b>Elise Beaucome </b> - Nuevo registro</p>
+                        </div>
+                        <div class="notification-popup">
+                            <p><b>Nueva Jornada </b> - Asignar roles</p>
+                        </div>
+                        <div class="notification-popup">
+                            <p><b>Nueva Jornada </b> - Colegio Maria Carlota</p>
+                        </div>
+                        <div class="notification-popup">
+                            <p><b>Jornada </b> - 10.12.2018 - Petare</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 pt-5 pb-2 text-center">
+                        <button class="btn btn-dig-blue">Ver todas</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /notificacion pop up-->
+
+        <!-- MENU items -->
+        <header class="header-digisalud dig-deg-blue">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="section-menu">
+                            <img class="bto-icons-tam" src="../bto/images/icon/Icon_menu.png" alt="Digisalud" />
+                        </div>
+                        <div class="section-back">
+                            <img class="bto-icons-tam" src="../bto/images/icon/Icon_Back.png" alt="Digisalud" />
+                        </div>
+                        <div class="section-search d-none d-sm-block">
+                            <div class="inner-addon left-addon">
+                                <div><i class="fas fa-search"></i></div>
+                                <input type="search" class="col-md-12" placeholder="Búsqueda" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="logo-prof">
+                        <div class="section-logo-log text-center">
+                            <img src="../bto/Isotipo_digisalud.png" alt="Digisalud">
+                        </div>
+                    </div>
+
+                    <div class="col-6 text-right">
+                        <div class="section-profile open">
+                            <img class="arrow-profile " src="../bto/images/icon/arrow_bottom.png" alt="Profile" />
+                            <img class="photo-profile" src="../bto/images/icon/register.png" alt="Profile" />
+                        </div>
+                        <div class="section-pr-name d-none d-sm-block">
+                            <h2>Alberto De Jesus</h2>
+                            <p>Psicólogo</p>
+                        </div>
+                        <div class="section-notification">
+                            <span>9</span>
+                            <img class="arrow-profile" src="../bto/images/icon/notification.png" alt="Profile" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <!-- /MENU items -->
+
+    </div>
+
+    <div id="sectionM6" class="p-3">
+        <div class="container">
+            <div class="row justify-content-center pt-3">
+                <div class="col-md-8">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 text-center pb-5">
+                                <h4>EDITAR JORNADA</h4>
+                            </div>
+                            <div class="col-12 pb-3">
+                                <h4>Datos de Jornada</h4>
+                            </div>
+
+                            <div class="col-12 mt-2 mb-4">
+                                <label>*Fecha y hora de la Jornada</label>
+                            </div>
+                            <div id="divp_1" class="new_date_cre col-12 row">
+                                <div class="col-sm-4 text-center ">
+                                    <input id="inp_1" type='text' class='aa datepicker-here text-center'
+                                        data-language='es' data-date-format="dd - mm - yyyy" readonly
+                                        placeholder="DD - MM - YY" />
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 text-center">
+                                    <input type="time" value="00:00" step="900" class=' aa text-center' format="HH:MM">
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-1 text-center">
+                                    <label>a</label>
+                                </div>
+                                <div class="col-sm-3 text-center">
+                                    <input type='time' value="00:00" class='aa text-center' />
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-1 add_date_jou">
+                                    <img src="../bto/images/icon/plus-blue.png" />
+                                </div>
+                            </div>
+
+
+                            <div class="col-12">
+                                <div class="md-form">
+                                    <label for="4">*Nombre de Jornada</label>
+                                    <input type="text" id="4" class="form-control form-control-sm" autocomplete="off">
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="md-form">
+                                    <label for="5">*Nombre de la Institución</label>
+                                    <input type="text" id="5" class="form-control form-control-sm" autocomplete="off">
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="md-form">
+                                    <label for="6">*Correo electrónico</label>
+                                    <input type="email" id="6" class="form-control form-control-sm" autocomplete="off">
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="md-form">
+                                    <label for="7">*Número de teléfono</label>
+                                    <input type="text" id="7" class="form-control form-control-sm" autocomplete="off">
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="select mt-2">
+                                    <select id="8" class="select-text" required>
+                                        <option disabled selected></option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                    </select>
+                                    <span class="select-highlight"></span>
+                                    <span class="select-bar"></span>
+                                    <label for="8" class="select-label">*Tipo de Jornada</label>
+                                </div>
+                                <div class="div-validador">
+                                    <div class="bto-validator">&nbsp;</div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="md-form">
+                                    <label for="9">*Número de Beneficiarios</label>
+                                    <input type="text" id="9" class="form-control form-control-sm" autocomplete="off">
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="md-form">
+                                    <label for="10">*Número de Voluntarios</label>
+                                    <input type="text" id="10" class="form-control form-control-sm" autocomplete="off">
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 mt-3 mb-3">
+                                <h4>*Seleccionar Pesquisa</h4>
+                            </div>
+                            <div class="col-12">
+                                <div class="icon-pesq">
+                                    <input id="sgv" type="checkbox" class="check">
+                                    <label for="sgv" class="checker"></label>
+                                    <div>Signos Vitales</div>
+                                </div>
+                                <div class="icon-pesq">
+                                    <input id="lab" type="checkbox" class="check">
+                                    <label for="lab" class="checker"></label>
+                                    <div>Laboratorio</div>
+                                </div>
+                                <div class="icon-pesq">
+                                    <input id="ant" type="checkbox" class="check">
+                                    <label for="ant" class="checker"></label>
+                                    <div>Antropometría</div>
+                                </div>
+                                <div class="icon-pesq">
+                                    <input id="aud" type="checkbox" class="check">
+                                    <label for="aud" class="checker"></label>
+                                    <div>Auditiva</div>
+                                </div>
+                                <div class="icon-pesq">
+                                    <input id="vis" type="checkbox" class="check">
+                                    <label for="vis" class="checker"></label>
+                                    <div>Visual</div>
+                                </div>
+                                <div class="icon-pesq">
+                                    <input id="ort" type="checkbox" class="check">
+                                    <label for="ort" class="checker"></label>
+                                    <div>Ortopédica</div>
+                                </div>
+                                <div class="icon-pesq">
+                                    <input id="san" type="checkbox" class="check">
+                                    <label for="san" class="checker"></label>
+                                    <div>Sanguíneo</div>
+                                </div>
+                                <div class="icon-pesq">
+                                    <input id="opt" type="checkbox" class="check">
+                                    <label for="opt" class="checker"></label>
+                                    <div>Óptica</div>
+                                </div>
+                                <div class="icon-pesq">
+                                    <input id="meg" type="checkbox" class="check">
+                                    <label for="meg" class="checker"></label>
+                                    <div>Medicina General</div>
+                                </div>
+                                <div class="icon-pesq">
+                                    <input id="odt" type="checkbox" class="check">
+                                    <label for="odt" class="checker"></label>
+                                    <div>Odontológia</div>
+                                </div>
+                                <div class="icon-pesq">
+                                    <input id="vac" type="checkbox" class="check">
+                                    <label for="vac" class="checker"></label>
+                                    <div>Vacunación</div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 mt-5 mb-3">
+                                <h4>Seleccionar encuesta</h4>
+                            </div>
+                            <div class="col-12 pb-1">
+                                <div class="round">
+                                    <input type="checkbox" id="14" />
+                                    <label for="14"></label>
+                                    <span>Encuesta 1</span>
+                                </div>
+                            </div>
+                            <div class="col-12 pb-1">
+                                <div class="round">
+                                    <input type="checkbox" id="13" />
+                                    <label for="13"></label>
+                                    <span>Encuesta 2</span>
+                                </div>
+                            </div>
+                            <div class="col-12 pb-5">
+                                <div class="round">
+                                    <input type="checkbox" id="15" />
+                                    <label for="15"></label>
+                                    <span>Encuesta 3</span>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="select mt-2">
+                                    <select id="11" class="select-text" required>
+                                        <option disabled selected></option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                    </select>
+                                    <span class="select-highlight"></span>
+                                    <span class="select-bar"></span>
+                                    <label for="11" class="select-label">*Status</label>
+                                </div>
+                                <div class="div-validador">
+                                    <div class="bto-validator">&nbsp;</div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="md-form">
+                                    <label for="12">*Ubicación</label>
+                                    <input type="text" id="12" class="form-control form-control-sm" autocomplete="off">
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1961.511024468156!2d-66.84297652586237!3d10.498927833145181!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf571221f389598af!2sWendy&#39;s!5e0!3m2!1ses-419!2sve!4v1544722290130"
+                                    width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+
+                            <div class="col-md-12 pt-5">
+                                <div class="clearfix  pb-5">
+                                    <button id="r_btn_register" class="btn btn-dig-blue">GUARDAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/CONTENIDO-->
+
+    <script type="text/javascript" src="../lib/MDB-Free/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../lib/MDB-Free/js/popper.min.js"></script>
+    <script type="text/javascript" src="../lib/MDB-Free/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../lib/MDB-Free/js/mdb.min.js"></script>
+    <script type="text/javascript" src="../lib/datepicker/datepicker.min.js"></script>
+    <script type="text/javascript" src="../lib/datepicker/datepicker.lang.es.js"></script>
+    <script type="text/javascript" src="../lib/fontawesome-free-5.2.0-web/js/all.min.js"></script>
+    <script type="text/javascript" src="../lib/maskinput/jquery.inputmask.bundle.js"></script>
+    <script type="text/javascript" src="../bto/js/bto_script.js"></script>
+    <script>
+        $(document).ready(function () {
+            digiModule6.main();
+        });
+    </script>
+</body>
+
+</html>

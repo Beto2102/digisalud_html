@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Modulo 6</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../lib/MDB-Free/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../lib/MDB-Free/css/mdb.min.css">
+        <link rel="stylesheet" href="../lib/fontawesome-free-5.2.0-web/css/all.min.css">
+        <link rel="stylesheet" href="../bto/css/style.css">
+        <link rel="stylesheet" href="../bto/css/bto-calendar.css">
+        <link rel="stylesheet" href="../bto/css/responsive-calendar.css">
+    </head>
+
+    <body class="">
+
+        <!-- DIV QUE OPACA LA PANTALLA-->
+        <div id="div-oculto"></div>
+        <!-- /DIV QUE OPACA LA PANTALLA-->
+
+        <div id="digi-menu-log">
+            <!-- MENU DESPLEGABLE -->
+            <div class="digi-modal digi-menu ocultar-pop">
+                <div class="action-close-pop icon-white">
+                    <i class="fas fa-times"></i>  
+                </div>
+
+                <div class="digi-cont-top digi-menu-header dig-deg-blue">
+                    <div>
+                        <img class="img-fluid" src="../bto/digisalud-logo.png" alt="Digisalud">  
+                    </div>
+                </div>
+                <div class="digi-menu-body">
+                    <!--ITEM 1-->
+                    <div class="digi-menu-item">
+                        <div class="digi-menu-item-label">
+                            Acerca de
+                            <img class="pull-right" src="../bto/images/icon/Icon_arrow_normal.png" alt="icon" />
+                        </div>
+                        <div class="digi-menu-sub digi-menu-hide">
+                            <div class="digi-menu-sub-item">
+                                <div class="digi-menu-sub-item-label">
+                                    Digisalud
+                                </div>
+                            </div>
+                            <div class="digi-menu-sub-item active">
+                                <div class="digi-menu-sub-item-label">
+                                    Preguntas Frecuentes
+                                </div>
+                            </div>
+                            <div class="digi-menu-sub-item">
+                                <div class="digi-menu-sub-item-label">
+                                    Términos de Uso y  Políticas de <br> Privacidad
+                                </div>
+                            </div>
+                            <div class="digi-menu-sub-item">
+                                <div class="digi-menu-sub-item-label">
+                                    Contacto
+                                </div>
+                            </div>
+                            <div class="digi-menu-sub-item">
+                                <div class="digi-menu-sub-item-label">
+                                    Comparte
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--ITEM 2-->
+                    <div class="digi-menu-item">
+                        <div class="digi-menu-item-label">
+                            Otro item del menu
+                            <img class="pull-right" src="../bto/images/icon/Icon_arrow_normal.png" alt="icon" />
+                        </div>
+                        <div class="digi-menu-sub digi-menu-hide">
+                            <div class="digi-menu-sub-item">
+                                <div class="digi-menu-sub-item-label">
+                                    Sub menú 1
+                                </div>
+                            </div>
+                            <div class="digi-menu-sub-item">
+                                <div class="digi-menu-sub-item-label">
+                                    Sub menú 2
+                                </div>
+                            </div>
+                            <div class="digi-menu-sub-item">
+                                <div class="digi-menu-sub-item-label">
+                                    Sub menú 3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /MENU DESPLEGABLE -->
+
+            <!-- MENU DESPLEGABLE PROFILE -->
+            <div class="digi-modal digi-menu-prof ocultar-pop">
+                <div class="digi-cont-top digi-menu-header dig-deg-blue">
+                    <div class="section-pr-name">
+                        <h2>Alberto De Jesus</h2>
+                        <p>Psicólogo</p>
+                    </div>
+                    <div class="section-profile closet">
+                        <img class="arrow-profile action-close-pop-prof" src="../bto/images/icon/arrow_top.png" alt="Profile"/>
+                        <img class="photo-profile" src="../bto/images/icon/register.png" alt="Profile"/>
+                    </div>
+                </div>
+
+                <div class="digi-menu-body-prof">
+                    <div class="digi-menu-sub-prof">
+                        <div class="digi-menu-sub-item-prof">
+                            <div class="digi-menu-sub-item-label-prof">
+                                <a href="edit_profile.html">Editar perfil</a>
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item-prof">
+                            <div class="digi-menu-sub-item-label-prof">
+                                <a href="#">Mis jornadas</a>
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item-prof">
+                            <div class="digi-menu-sub-item-label-prof">
+                                <a href="#">Configuración</a>
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item-prof">
+                            <div class="digi-menu-sub-item-label-prof">
+                                <a href="#">Ayuda</a>
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item-prof">
+                            <div class="digi-menu-sub-item-label-prof">
+                                <a href="#">Cerrar sesión</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /MENU DESPLEGABLE PROFILE -->
+
+            <!-- notificacion pop up-->
+            <div class="digi-modal digi-popup body-section-notification ocultar-pop">
+                <div class="container-fluid">
+                    <div class="row ">
+
+                        <div class="action-close-pop">
+                            <i class="fas fa-times"></i>  
+                        </div>
+
+                        <div class="col-md-12 text-center font-weight-bold pb-3">
+                            <h5>Notificaciónes <span>9</span></h5>
+                        </div>
+
+                        <div class="col-md-12 notifications-popup">
+                            <div class="notification-popup">
+                                <p><b>Elise Beaucome </b> - Nuevo registro</p>
+                            </div>
+                            <div class="notification-popup">
+                                <p><b>Nueva Jornada </b> - Asignar roles</p>
+                            </div>
+                            <div class="notification-popup">
+                                <p><b>Nueva Jornada </b> - Colegio Maria Carlota</p>
+                            </div>
+                            <div class="notification-popup">
+                                <p><b>Jornada </b> - 10.12.2018 - Petare</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 pt-5 pb-2 text-center">
+                            <button class="btn btn-dig-blue">Ver todas</button>  
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /notificacion pop up-->
+
+            <!-- MENU items -->
+            <header class="header-digisalud dig-deg-blue">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="section-menu">
+                                <img class="bto-icons-tam" src="../bto/images/icon/Icon_menu.png" alt="Digisalud"/>
+                            </div>
+                            <div class="section-back">
+                                <img class="bto-icons-tam" src="../bto/images/icon/Icon_Back.png" alt="Digisalud"/>
+                            </div>
+                            <div class="section-search d-none d-sm-block">
+                                <div class="inner-addon left-addon">
+                                    <div><i class="fas fa-search"></i></div>
+                                    <input type="search" class="col-md-12" placeholder="Búsqueda"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="logo-prof">
+                            <div class="section-logo-log text-center">
+                                <img src="../bto/Isotipo_digisalud.png" alt="Digisalud">
+                            </div>
+                        </div>
+
+                        <div class="col-6 text-right">
+                            <div class="section-profile open">
+                                <img class="arrow-profile " src="../bto/images/icon/arrow_bottom.png" alt="Profile"/>
+                                <img class="photo-profile" src="../bto/images/icon/register.png" alt="Profile"/>
+                            </div>
+                            <div class="section-pr-name d-none d-sm-block">
+                                <h2>Alberto De Jesus</h2>
+                                <p>Psicólogo</p>
+                            </div>
+                            <div class="section-notification">
+                                <span>9</span>
+                                <img class="arrow-profile" src="../bto/images/icon/notification.png" alt="Profile"/>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+            <!-- /MENU items -->
+
+        </div>
+
+        <div id="sectionM6" class="p-3">
+            <div class="container-fluid">
+                <div class="row pt-3 pb-3">
+                    <div class="sec-left">
+                        <div class="controls-calendar">
+                            <span class="prev-calendar"><i class="fas fa-angle-left"></i></span>
+                            <span class="next-calendar"><i class=" fas fa-angle-right"></i></span>
+                        </div>
+                        <div class="bto-header-month-label"></div>
+                        <a class="bto-type-month active" data-status="1">Mes</a>
+                        <a class="bto-type-week" data-status="0">Semana</a>
+                    </div>
+                    <div class="sec-center">
+                        <button id="create" class="btn btn-dig-blue-inv">CREAR JORNADA</button>
+                    </div>
+                    <div class="sec-right">
+                        <div class='action-calender'>
+                            <label>Jornadas Públicas</label>
+                            <div id="type2" class="circle-calendar bto-day-activity-blue-light" data-activity="1"></div>
+                        </div>
+                        <div  class='action-calender'>
+                            <label>Mis Jornadas</label>
+                            <div id="type1" class="circle-calendar bto-day-activity-blue" data-activity="1"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="bto-calendar" class="bto-calendar" data-month="0" data-year="0" data-week="1">
+                        <div class="bto-day-headers">
+                        </div>
+                        <div class="bto-days">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/CONTENIDO-->
+
+        <script type="text/javascript" src="../lib/MDB-Free/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../lib/MDB-Free/js/popper.min.js"></script>
+        <script type="text/javascript" src="../lib/MDB-Free/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../lib/MDB-Free/js/mdb.min.js"></script>
+        <script type="text/javascript" src="../lib/fontawesome-free-5.2.0-web/js/all.min.js"></script>
+        <script type="text/javascript" src="../bto/js/bto_script.js"></script>
+        <script type="text/javascript" src="../bto/js/responsive-calendar.js"></script>
+        <script type="text/javascript" src="../bto/js/bto-calendar.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                var values = [
+                    {"id": 1, "date": "2018/11/30", "type": 1, "label": "Jornada 1", "url": "#"},
+                    {"id": 12, "date": "2018/11/29", "type": 1, "label": "Jornada 12", "url": "#"},
+                    {"id": 2, "date": "2018/11/30", "type": 2, "label": "Jornada 2", "url": "#"},
+                    {"id": 3, "date": "2018/11/30", "type": 1, "label": "Jornada 3", "url": "#"},
+                    {"id": 4, "date": "2018/11/30", "type": 1, "label": "Jornada 4", "url": "#"},
+                    {"id": 5, "date": "2018/11/30", "type": 1, "label": "Jornada 5", "url": "#"},
+                    {"id": 6, "date": "2018/11/30", "type": 1, "label": "Jornada 6", "url": "#"},
+                    {"id": 7, "date": "2018/12/4", "type": 2, "label": "Jornada 7", "url": "#"},
+                    {"id": 8, "date": "2018/12/4", "type": 1, "label": "Jornada 8", "url": "#"},
+                    {"id": 9, "date": "2018/11/30", "type": 2, "label": "Jornada 9", "url": "#"},
+                    {"id": 10, "date": "2018/12/5", "type": 1, "label": "Jornada 10", "url": "#"},
+                    {"id": 11, "date": "2018/12/30", "type": 2, "label": "Jornada 11", "url": "#"}
+                ];
+
+                btoCalendar.init(2018, 12, 0, values);
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                digiModule6.main();
+            });
+        </script>
+    </body>
+</html>

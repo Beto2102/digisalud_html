@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Modulo 4</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../lib/MDB-Free/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/MDB-Free/css/mdb.min.css" rel="stylesheet">
+    <link href="../lib/fontawesome-free-5.2.0-web/css/all.min.css" rel="stylesheet">
+    <link href="../bto/css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="">
+
+    <!-- DIV QUE OPACA LA PANTALLA-->
+    <div id="div-oculto"></div>
+    <!-- /DIV QUE OPACA LA PANTALLA-->
+
+    <div id="digi-menu-log">
+        <!-- MENU DESPLEGABLE -->
+        <div class="digi-modal digi-menu ocultar-pop">
+            <div class="action-close-pop icon-white">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <div class="digi-cont-top digi-menu-header dig-deg-purple">
+                <div>
+                    <img class="img-fluid" src="../bto/digisalud-logo.png" alt="Digisalud">
+                </div>
+            </div>
+            <div class="digi-menu-body">
+                <!--ITEM 1-->
+                <div class="digi-menu-item">
+                    <div class="digi-menu-item-label">
+                        Acerca de
+                        <img class="pull-right" src="../bto/images/icon/Icon_arrow_normal.png" alt="icon" />
+                    </div>
+                    <div class="digi-menu-sub digi-menu-hide">
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Digisalud
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item active">
+                            <div class="digi-menu-sub-item-label">
+                                Preguntas Frecuentes
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Términos de Uso y Políticas de <br> Privacidad
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Contacto
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Comparte
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--ITEM 2-->
+                <div class="digi-menu-item">
+                    <div class="digi-menu-item-label">
+                        Otro item del menu
+                        <img class="pull-right" src="../bto/images/icon/Icon_arrow_normal.png" alt="icon" />
+                    </div>
+                    <div class="digi-menu-sub digi-menu-hide">
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Sub menú 1
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Sub menú 2
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Sub menú 3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /MENU DESPLEGABLE -->
+
+        <!-- MENU DESPLEGABLE PROFILE -->
+        <div class="digi-modal digi-menu-prof ocultar-pop">
+            <div class="digi-cont-top digi-menu-header dig-deg-purple">
+                <div class="section-pr-name">
+                    <h2>Alberto De Jesus</h2>
+                    <p>Psicólogo</p>
+                </div>
+                <div class="section-profile closet">
+                    <img class="arrow-profile action-close-pop-prof" src="../bto/images/icon/arrow_top.png" alt="Profile" />
+                    <img class="photo-profile" src="../bto/images/icon/register.png" alt="Profile" />
+                </div>
+            </div>
+
+            <div class="digi-menu-body-prof">
+                <div class="digi-menu-sub-prof">
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="edit_profile.html">Editar perfil</a>
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="#">Mis jornadas</a>
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="#">Configuración</a>
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="#">Ayuda</a>
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="#">Cerrar sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /MENU DESPLEGABLE PROFILE -->
+
+        <!-- notificacion pop up-->
+        <div class="digi-modal digi-popup body-section-notification ocultar-pop">
+            <div class="container-fluid">
+                <div class="row ">
+
+                    <div class="action-close-pop">
+                        <i class="fas fa-times"></i>
+                    </div>
+
+                    <div class="col-md-12 text-center font-weight-bold pb-3">
+                        <h5>Notificaciónes <span>9</span></h5>
+                    </div>
+
+                    <div class="col-md-12 notifications-popup">
+                        <div class="notification-popup">
+                            <p><b>Elise Beaucome </b> - Nuevo registro</p>
+                        </div>
+                        <div class="notification-popup">
+                            <p><b>Nueva Jornada </b> - Asignar roles</p>
+                        </div>
+                        <div class="notification-popup">
+                            <p><b>Nueva Jornada </b> - Colegio Maria Carlota</p>
+                        </div>
+                        <div class="notification-popup">
+                            <p><b>Jornada </b> - 10.12.2018 - Petare</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 pt-5 pb-2 text-center">
+                        <button class="btn btn-dig-blue">Ver todas</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /notificacion pop up-->
+
+        <!-- MENU items -->
+        <header class="header-digisalud dig-deg-purple">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="section-menu">
+                            <img class="bto-icons-tam" src="../bto/images/icon/Icon_menu.png" alt="Digisalud" />
+                        </div>
+                        <div class="section-back">
+                            <img class="bto-icons-tam" src="../bto/images/icon/Icon_Back.png" alt="Digisalud" />
+                        </div>
+                        <div class="section-search d-none d-sm-block">
+                            <div class="inner-addon left-addon">
+                                <div><i class="fas fa-search"></i></div>
+                                <input type="search" class="col-md-12" placeholder="Búsqueda" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="logo-prof">
+                        <div class="section-logo-log text-center">
+                            <img src="../bto/Isotipo_digisalud.png" alt="Digisalud">
+                        </div>
+                    </div>
+
+                    <div class="col-6 text-right">
+                        <div class="section-profile open">
+                            <img class="arrow-profile " src="../bto/images/icon/arrow_bottom.png" alt="Profile" />
+                            <img class="photo-profile" src="../bto/images/icon/register.png" alt="Profile" />
+                        </div>
+                        <div class="section-pr-name d-none d-sm-block">
+                            <h2>Alberto De Jesus</h2>
+                            <p>Psicólogo</p>
+                        </div>
+                        <div class="section-notification">
+                            <span>9</span>
+                            <img class="arrow-profile" src="../bto/images/icon/notification.png" alt="Profile" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <!-- /MENU items -->
+
+    </div>
+
+    <!-- Contenido -->
+    <div id="sectionM4" class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center pt-5">
+                    <h2>Registro familiar</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center pt-5">
+                <div class="col-md-5">
+                    <div class="tipo-re-fa">
+                        <div class="round">
+                            <input type="checkbox" id="ch_resumen" />
+                            <label for="ch_resumen"></label>
+                            <span>Resumen</span>
+                        </div>
+                    </div>
+                    <div class="tipo-re-fa">
+                        <div class="round">
+                            <input type="checkbox" id="ch_encuesta" checked />
+                            <label for="ch_encuesta"></label>
+                            <span>Encuesta</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center pt-5">
+                <div class="col-md-8">
+                    <div class="row">
+
+                        <div class="col-12 pb-3">
+                            <h3><b>Datos Socioeconómicos</b></h3>
+                        </div>
+
+                        <div class="col-12 pb-4 pt-4">
+                            <h3>Agua</h3>
+                        </div>
+                        <div class="col-12 pb-5">
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a1" name="radio-agua" />
+                                    <label for="a1"></label>
+                                    <span>Camión cisterna</span>
+                                </div>
+                            </div>
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a2" name="radio-agua" />
+                                    <label for="a2"></label>
+                                    <span>tubería doméstica</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 pb-5">
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a3" name="radio-agua" />
+                                    <label for="a3"></label>
+                                    <span>Pozo / Perforado</span>
+                                </div>
+                            </div>
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a4" name="radio-agua" />
+                                    <label for="a4"></label>
+                                    <span>Pipote / Tobos</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="md-form">
+                                <label for="lastname">*Otro</label>
+                                <input type="text" id="lastname" class="form-control form-control-sm" autocomplete="off">
+                                <div class="div-validador">
+                                    <div class="bto-validator">&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 pb-4 pt-4">
+                            <h3>Aguas negras</h3>
+                        </div>
+                        <div class="col-12 pb-5">
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a5" name="radio-agua-negra" />
+                                    <label for="a5"></label>
+                                    <span>Tuberías</span>
+                                </div>
+                            </div>
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a6" name="radio-agua-negra" />
+                                    <label for="a6"></label>
+                                    <span>Pozo séptico</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 pb-5">
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a7" name="radio-agua-negra" />
+                                    <label for="a7"></label>
+                                    <span>Letrina</span>
+                                </div>
+                            </div>
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a8" name="radio-agua-negra" />
+                                    <label for="a8"></label>
+                                    <span>Interperie</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="md-form">
+                                <label for="lastname">*Otro</label>
+                                <input type="text" id="lastname" class="form-control form-control-sm" autocomplete="off">
+                                <div class="div-validador">
+                                    <div class="bto-validator">&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 pb-4 pt-4">
+                            <h3>Techo</h3>
+                        </div>
+                        <div class="col-12 pb-5">
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a9" name="radio-techo" />
+                                    <label for="a9"></label>
+                                    <span>Platabanda</span>
+                                </div>
+                            </div>
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a10" name="radio-techo" />
+                                    <label for="a10"></label>
+                                    <span>Zinc</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 pb-5">
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a11" name="radio-techo" />
+                                    <label for="a11"></label>
+                                    <span>Palma</span>
+                                </div>
+                            </div>
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a12" name="radio-techo" />
+                                    <label for="a12"></label>
+                                    <span>Fibra vegetal</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 pb-5">
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a13" name="radio-techo" />
+                                    <label for="a13"></label>
+                                    <span>Acerolit</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="md-form">
+                                <label for="lastname">*Otro</label>
+                                <input type="text" id="lastname" class="form-control form-control-sm" autocomplete="off">
+                                <div class="div-validador">
+                                    <div class="bto-validator">&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 pb-4 pt-4">
+                            <h3>Electricidad</h3>
+                        </div>
+                        <div class="col-12 pb-5">
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a14" name="radio-elec" />
+                                    <label for="a14"></label>
+                                    <span>Formal</span>
+                                </div>
+                            </div>
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a15" name="radio-elec" />
+                                    <label for="a15"></label>
+                                    <span>Informal</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 pb-5">
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a16" name="radio-elec" />
+                                    <label for="a16"></label>
+                                    <span>No tiene</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="md-form">
+                                <label for="lastname">*Otro</label>
+                                <input type="text" id="lastname" class="form-control form-control-sm" autocomplete="off">
+                                <div class="div-validador">
+                                    <div class="bto-validator">&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 pb-4 pt-4">
+                            <h3>Piso</h3>
+                        </div>
+                        <div class="col-12 pb-5">
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a17" name="radio-piso" />
+                                    <label for="a17"></label>
+                                    <span>Cemento</span>
+                                </div>
+                            </div>
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a18" name="radio-piso" />
+                                    <label for="a18"></label>
+                                    <span>Tierra / Arena</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 pb-5">
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a19" name="radio-piso" />
+                                    <label for="a19"></label>
+                                    <span>Baldosa</span>
+                                </div>
+                            </div>
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a20" name="radio-piso" />
+                                    <label for="a20"></label>
+                                    <span>Madera</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="md-form">
+                                <label for="lastname">*Otro</label>
+                                <input type="text" id="lastname" class="form-control form-control-sm" autocomplete="off">
+                                <div class="div-validador">
+                                    <div class="bto-validator">&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 pb-4 pt-4">
+                            <h3>Paredes</h3>
+                        </div>
+                        <div class="col-12 pb-5">
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a21" name="radio-pard" />
+                                    <label for="a21"></label>
+                                    <span>Bloque</span>
+                                </div>
+                            </div>
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a22" name="radio-pard" />
+                                    <label for="a22"></label>
+                                    <span>Tablas</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 pb-5">
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a23" name="radio-pard" />
+                                    <label for="a23"></label>
+                                    <span>Bahareque</span>
+                                </div>
+                            </div>
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a24" name="radio-pard" />
+                                    <label for="a24"></label>
+                                    <span>Cortinas</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 pb-5">
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a25" name="radio-pard" />
+                                    <label for="a25"></label>
+                                    <span>Adobe</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="md-form">
+                                <label for="lastname">*Otro</label>
+                                <input type="text" id="lastname" class="form-control form-control-sm" autocomplete="off">
+                                <div class="div-validador">
+                                    <div class="bto-validator">&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 pb-4 pt-4">
+                            <h3>Basura</h3>
+                        </div>
+                        <div class="col-12 pb-5">
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a26" name="radio-basura" />
+                                    <label for="a26"></label>
+                                    <span>Camión</span>
+                                </div>
+                            </div>
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a27" name="radio-basura" />
+                                    <label for="a27"></label>
+                                    <span>Container</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 pb-5">
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a28" name="radio-basura" />
+                                    <label for="a28"></label>
+                                    <span>Aire Libre</span>
+                                </div>
+                            </div>
+                            <div class="tipo-re-encu">
+                                <div class="round">
+                                    <input type="radio" id="a29" name="radio-basura" />
+                                    <label for="a29"></label>
+                                    <span>Quema</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="md-form">
+                                <label for="lastname">*Otro</label>
+                                <input type="text" id="lastname" class="form-control form-control-sm" autocomplete="off">
+                                <div class="div-validador">
+                                    <div class="bto-validator">&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 pt-5 pb-5">
+                            <button id="save_encuesta" class="btn btn-dig-blue">Guaradar Encuesta</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/CONTENIDO-->
+
+        <script type="text/javascript" src="../lib/MDB-Free/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../lib/MDB-Free/js/popper.min.js"></script>
+        <script type="text/javascript" src="../lib/MDB-Free/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../lib/MDB-Free/js/mdb.min.js"></script>
+        <script type="text/javascript" src="../lib/fontawesome-free-5.2.0-web/js/all.min.js"></script>
+        <script type="text/javascript" src="../bto/js/bto_script.js"></script>
+        <script>
+            $(document).ready(function () {
+                digiModule4.familiar();
+            });
+        </script>
+</body>
+
+</html>

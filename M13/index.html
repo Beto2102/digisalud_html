@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Modulo 13</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../lib/MDB-Free/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../lib/MDB-Free/css/mdb.min.css" />
+    <link rel="stylesheet" href="../lib/fontawesome-free-5.2.0-web/css/all.min.css" />
+    <link rel="stylesheet" href="../bto/css/style.css" />
+    <link rel="stylesheet" href="../lib/datepicker/datepicker.min.css" />
+    <link rel="stylesheet" href="mod13.css" />
+</head>
+
+<body class="noscroll">
+
+    <!-- Menu -->
+    <div id="div-oculto"></div>
+    <div id="digi-menu-log">
+        <!-- MENU DESPLEGABLE -->
+        <div class="digi-modal digi-menu ocultar-pop">
+            <div class="action-close-pop icon-white">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <div class="digi-cont-top digi-menu-header dig-deg-blue">
+                <div>
+                    <img class="img-fluid" src="../bto/digisalud-logo.png" alt="Digisalud">
+                </div>
+            </div>
+            <div class="digi-menu-body">
+                <!--ITEM 1-->
+                <div class="digi-menu-item">
+                    <div class="digi-menu-item-label">
+                        Acerca de
+                        <img class="pull-right" src="../bto/images/icon/Icon_arrow_normal.png" alt="icon" />
+                    </div>
+                    <div class="digi-menu-sub digi-menu-hide">
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Digisalud
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item active">
+                            <div class="digi-menu-sub-item-label">
+                                Preguntas Frecuentes
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Términos de Uso y Políticas de <br> Privacidad
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Contacto
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Comparte
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--ITEM 2-->
+                <div class="digi-menu-item">
+                    <div class="digi-menu-item-label">
+                        Otro item del menu
+                        <img class="pull-right" src="../bto/images/icon/Icon_arrow_normal.png" alt="icon" />
+                    </div>
+                    <div class="digi-menu-sub digi-menu-hide">
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Sub menú 1
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Sub menú 2
+                            </div>
+                        </div>
+                        <div class="digi-menu-sub-item">
+                            <div class="digi-menu-sub-item-label">
+                                Sub menú 3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /MENU DESPLEGABLE -->
+
+        <!-- MENU DESPLEGABLE PROFILE -->
+        <div class="digi-modal digi-menu-prof ocultar-pop">
+            <div class="digi-cont-top digi-menu-header dig-deg-blue">
+                <div class="section-pr-name">
+                    <h2>Alberto De Jesus</h2>
+                    <p>Psicólogo</p>
+                </div>
+                <div class="section-profile closet">
+                    <img class="arrow-profile action-close-pop-prof" src="../bto/images/icon/arrow_top.png"
+                        alt="Profile" />
+                    <img class="photo-profile" src="../bto/images/icon/register.png" alt="Profile" />
+                </div>
+            </div>
+
+            <div class="digi-menu-body-prof">
+                <div class="digi-menu-sub-prof">
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="edit_profile.html">Editar perfil</a>
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="#">Mis jornadas</a>
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="#">Configuración</a>
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="#">Ayuda</a>
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item-prof">
+                        <div class="digi-menu-sub-item-label-prof">
+                            <a href="#">Cerrar sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /MENU DESPLEGABLE PROFILE -->
+
+        <!-- notificacion pop up-->
+        <div class="digi-modal digi-popup body-section-notification ocultar-pop">
+            <div class="container-fluid">
+                <div class="row ">
+
+                    <div class="action-close-pop">
+                        <i class="fas fa-times"></i>
+                    </div>
+
+                    <div class="col-md-12 text-center font-weight-bold pb-3">
+                        <h5>Notificaciónes <span>9</span></h5>
+                    </div>
+
+                    <div class="col-md-12 notifications-popup">
+                        <div class="notification-popup">
+                            <p><b>Elise Beaucome </b> - Nuevo registro</p>
+                        </div>
+                        <div class="notification-popup">
+                            <p><b>Nueva Jornada </b> - Asignar roles</p>
+                        </div>
+                        <div class="notification-popup">
+                            <p><b>Nueva Jornada </b> - Colegio Maria Carlota</p>
+                        </div>
+                        <div class="notification-popup">
+                            <p><b>Jornada </b> - 10.12.2018 - Petare</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 pt-5 pb-2 text-center">
+                        <button class="btn btn-dig-blue">Ver todas</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /notificacion pop up-->
+
+        <!-- MENU items -->
+        <header class="header-digisalud dig-deg-blue">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="section-menu">
+                            <img class="bto-icons-tam" src="../bto/images/icon/Icon_menu.png" alt="Digisalud" />
+                        </div>
+                        <div class="section-back">
+                            <img class="bto-icons-tam" src="../bto/images/icon/Icon_Back.png" alt="Digisalud" />
+                        </div>
+                        <div class="section-search d-none d-sm-block">
+                            <div class="inner-addon left-addon">
+                                <div><i class="fas fa-search"></i></div>
+                                <input type="search" class="col-md-12" placeholder="Búsqueda" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="logo-prof">
+                        <div class="section-logo-log text-center">
+                            <img src="../bto/Isotipo_digisalud.png" alt="Digisalud">
+                        </div>
+                    </div>
+
+                    <div class="col-6 text-right">
+                        <div class="section-profile open">
+                            <img class="arrow-profile " src="../bto/images/icon/arrow_bottom.png" alt="Profile" />
+                            <img class="photo-profile" src="../bto/images/icon/register.png" alt="Profile" />
+                        </div>
+                        <div class="section-pr-name d-none d-sm-block">
+                            <h2>Alberto De Jesus</h2>
+                            <p>Psicólogo</p>
+                        </div>
+                        <div class="section-notification">
+                            <span>9</span>
+                            <img class="arrow-profile" src="../bto/images/icon/notification.png" alt="Profile" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <!-- /MENU items -->
+
+    </div>
+    <!-- /Menu -->
+
+    <!-- CONTENIDO -->
+    <div id="sectionM13">
+
+        <!-- SECCION IZQUIERDA-->
+        <div id="windows-left" class="dig-backg-texture">
+            <div>
+                <h1>Selecciona<br> una jornada</h1>
+                <p>Para poder registrar usuario</p>
+            </div>
+        </div>
+        <!-- /SECCION IZQUIERDA-->
+
+        <!-- SECCION DERECHA -->
+        <div id="windows-right" class="bag-silver">
+
+            <!-- FILTROS -->
+            <div class="container p-5 prim">
+                <div class="row">
+                    <div class="col-12 pb-5">
+                        <h2 class="font-weight-bold">Busca tu jornada</h2>
+                        <span>FILTRO(S)</span>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="md-form mt-0">
+                            <label for="m13_1">Palabra clave</label>
+                            <input type="text" id="m13_1" class="form-control form-control-sm" autocomplete="off">
+                            <div class="div-validador">
+                                <div class="bto-validator">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div id="divp_1" class="new_date_cre container-fluid">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <label for="inp_1" class="col-12 text-dig-silver-light">Desde</label>
+                                    <input id="inp_1" type='text' class='aa datepicker-here text-center'
+                                        data-language='es' data-date-format="dd - mm - yyyy" readonly
+                                        placeholder="DD - MM - YY" />
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <label for="inp_2" class="col-12 text-dig-silver-light">Hasta</label>
+                                    <input id="inp_2" type='text' class='aa datepicker-here text-center'
+                                        data-language='es' data-date-format="dd - mm - yyyy" readonly
+                                        placeholder="DD - MM - YY" />
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-3 mb-1">
+                        <h6 class="text-dig-silver-light">Seleccione pesquisas</h6>
+                    </div>
+
+                    <div class="col-12 pb-2">
+                        <input id="sgv" type="checkbox" class="check">
+                        <label for="sgv" class="checker"></label>
+                        <input id="ant" type="checkbox" class="check">
+                        <label for="ant" class="checker"></label>
+                        <input id="vis" type="checkbox" class="check">
+                        <label for="vis" class="checker"></label>
+                        <input id="san" type="checkbox" class="check">
+                        <label for="san" class="checker"></label>
+                        <input id="meg" type="checkbox" class="check">
+                        <label for="meg" class="checker"></label>
+                        <input id="vac" type="checkbox" class="check">
+                        <label for="vac" class="checker"></label>
+                        <input id="lab" type="checkbox" class="check">
+                        <label for="lab" class="checker"></label>
+                        <input id="aud" type="checkbox" class="check">
+                        <label for="aud" class="checker"></label>
+                        <input id="ort" type="checkbox" class="check">
+                        <label for="ort" class="checker"></label>
+                        <input id="opt" type="checkbox" class="check">
+                        <label for="opt" class="checker"></label>
+                        <input id="odt" type="checkbox" class="check">
+                        <label for="odt" class="checker"></label>
+                    </div>
+
+                    <div class="div_btns col-12 pt-2">
+                        <button id="search" class="btn btn-dig-blue-inv">Buscar</button>
+                        <button id="clear" class="ml-4 btn btn-dig-blue-inv">Limpiar Busqueda</button>
+                    </div>
+                </div>
+            </div>
+            <!-- /FILTROS -->
+
+            <!-- Resultados -->
+            <div class="container pt-4 pb-5">
+
+                <!-- Sin Busqueda -->
+                <div class="row text-center pt-5 pb-5 dont-search">
+                    <div class="col-12">
+                        <img src="../bto/images/icon/search-blue.png" />
+                    </div>
+                    <div class="col-12 pt-4">
+                        <h3 class="text-dig-silver-light">Busca tu <span class="text-dig-blue-light">Jornada</span><br>
+                            de hoy
+                        </h3>
+                    </div>
+                </div>
+                <!-- /Sin Busqueda -->
+
+                <!-- Tarjetas buscadas -->
+                <div class="row  pt-2 pb-2">
+                    <div class="col-12 find-search">
+
+                        <div class="card-search border-dig-blue">
+                            <div class="card-title">
+                                <h2>Jornada Miranda Salud</h2>
+                                <p class="text-dig-silver-light ">Digisalud</p>
+                            </div>
+                            <div class="card-date">
+                                <h2 class="text-dig-silver-light font-weight-light">
+                                    <span>22-10-2018</span>
+                                    <i class="ml-2 fas fa-fw fa-calendar-alt"></i>
+                                </h2>
+                            </div>
+                            <div class="card-pesquise">
+                                <img src="../bto/images/pesq/sgv.png" />
+                                <img src="../bto/images/pesq/lab.png" />
+                                <img src="../bto/images/pesq/ant.png" />
+                                <img src="../bto/images/pesq/aud.png" />
+                                <img src="../bto/images/pesq/vis.png" />
+                                <img src="../bto/images/pesq/ort.png" />
+                                <img src="../bto/images/pesq/san.png" />
+                                <img src="../bto/images/pesq/opt.png" />
+                                <img src="../bto/images/pesq/meg.png" />
+                                <img src="../bto/images/pesq/odt.png" />
+                                <img src="../bto/images/pesq/vac.png" />
+                            </div>
+                            <div class="card-info">
+                                <div class="text-left">
+                                    <h2>Beneficiarios</h2>
+                                    <h2>Voluntarios</h2>
+                                    <h2 class="text-danger">Faltan</h2>
+                                </div>
+                                <div class="text-right">
+                                    <h2>2899</h2>
+                                    <h2>2500</h2>
+                                    <h2 class="text-danger">0</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-search border-dig-blue-light">
+                            <div class="card-title">
+                                <h2>Chacao</h2>
+                                <p class="text-dig-silver-light ">Digisalud</p>
+                            </div>
+                            <div class="card-date">
+                                <h2 class="text-dig-silver-light font-weight-light">
+                                    <span>22-10-2018</span>
+                                    <i class="ml-2 fas fa-fw fa-calendar-alt"></i>
+                                </h2>
+                            </div>
+                            <div class="card-pesquise">
+                                <img src="../bto/images/pesq/sgv.png" />
+                                <img src="../bto/images/pesq/lab.png" />
+                                <img src="../bto/images/pesq/ant.png" />
+                                <img src="../bto/images/pesq/aud.png" />
+                                <img src="../bto/images/pesq/odt.png" />
+                                <img src="../bto/images/pesq/vac.png" />
+                            </div>
+                            <div class="card-info">
+                                <div class="text-left">
+                                    <h2>Beneficiarios</h2>
+                                    <h2>Voluntarios</h2>
+                                    <h2 class="text-danger">Faltan</h2>
+                                </div>
+                                <div class="text-right">
+                                    <h2>2899</h2>
+                                    <h2>2500</h2>
+                                    <h2 class="text-danger">0</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-search border-dig-blue">
+                            <div class="card-title">
+                                <h2>Petare Salud</h2>
+                                <p class="text-dig-silver-light ">Digisalud</p>
+                            </div>
+                            <div class="card-date">
+                                <h2 class="text-dig-silver-light font-weight-light">
+                                    <span>22-10-2018</span>
+                                    <i class="ml-2 fas fa-fw fa-calendar-alt"></i>
+                                </h2>
+                            </div>
+                            <div class="card-pesquise">
+                                <img src="../bto/images/pesq/sgv.png" />
+                                <img src="../bto/images/pesq/lab.png" />
+                                <img src="../bto/images/pesq/ant.png" />
+                                <img src="../bto/images/pesq/aud.png" />
+                                <img src="../bto/images/pesq/odt.png" />
+                                <img src="../bto/images/pesq/vac.png" />
+                            </div>
+                            <div class="card-info">
+                                <div class="text-left">
+                                    <h2>Beneficiarios</h2>
+                                    <h2>Voluntarios</h2>
+                                    <h2 class="text-danger">Faltan</h2>
+                                </div>
+                                <div class="text-right">
+                                    <h2>2899</h2>
+                                    <h2>2500</h2>
+                                    <h2 class="text-danger">0</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-search border-dig-blue-light">
+                            <div class="card-title">
+                                <h2>Chacao</h2>
+                                <p class="text-dig-silver-light ">Digisalud</p>
+                            </div>
+                            <div class="card-date">
+                                <h2 class="text-dig-silver-light font-weight-light">
+                                    <span>22-10-2018</span>
+                                    <i class="ml-2 fas fa-fw fa-calendar-alt"></i>
+                                </h2>
+                            </div>
+                            <div class="card-pesquise">
+                                <img src="../bto/images/pesq/sgv.png" />
+                                <img src="../bto/images/pesq/lab.png" />
+                                <img src="../bto/images/pesq/ant.png" />
+                                <img src="../bto/images/pesq/aud.png" />
+                                <img src="../bto/images/pesq/odt.png" />
+                                <img src="../bto/images/pesq/vac.png" />
+                            </div>
+                            <div class="card-info">
+                                <div class="text-left">
+                                    <h2>Beneficiarios</h2>
+                                    <h2>Voluntarios</h2>
+                                    <h2 class="text-danger">Faltan</h2>
+                                </div>
+                                <div class="text-right">
+                                    <h2>2899</h2>
+                                    <h2>2500</h2>
+                                    <h2 class="text-danger">0</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /Tarjetas buscadas -->
+
+            </div>
+            <!-- /Resultados -->
+
+        </div>
+        <!-- /SECCION DERECHA -->
+
+    </div>
+    <!--/CONTENIDO-->
+
+    <script type="text/javascript" src="../lib/MDB-Free/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../lib/MDB-Free/js/popper.min.js"></script>
+    <script type="text/javascript" src="../lib/MDB-Free/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../lib/MDB-Free/js/mdb.min.js"></script>
+    <script type="text/javascript" src="../lib/datepicker/datepicker.min.js"></script>
+    <script type="text/javascript" src="../lib/datepicker/datepicker.lang.es.js"></script>
+    <script type="text/javascript" src="../lib/fontawesome-free-5.2.0-web/js/all.min.js"></script>
+    <script type="text/javascript" src="../lib/maskinput/jquery.inputmask.bundle.js"></script>
+    <script type="text/javascript" src="../bto/js/bto_script.js"></script>
+    <script>
+        $(document).ready(function () {
+            digiModule13.main();
+        });
+    </script>
+</body>
+
+</html>

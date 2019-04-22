@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Modulo 12</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../lib/MDB-Free/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/MDB-Free/css/mdb.min.css" rel="stylesheet">
+    <link href="../lib/fontawesome-free-5.2.0-web/css/all.min.css" rel="stylesheet">
+    <link href="../bto/css/style.css" rel="stylesheet">
+    <style>
+
+
+    </style>
+</head>
+
+<body class="noscroll">
+
+    <!-- DIV QUE OPACA LA PANTALLA-->
+    <div id="div-oculto"></div>
+    <!-- /DIV QUE OPACA LA PANTALLA-->
+
+    <!-- MENU DESPLEGABLE -->
+    <div class="digi-modal digi-menu ocultar-pop">
+        <div class="action-close-pop icon-white">
+            <i class="fas fa-times"></i>
+        </div>
+
+        <div class="digi-cont-top digi-menu-header dig-deg-orange">
+            <div>
+                <img class="img-fluid" src="../bto/digisalud-logo.png" alt="Digisalud">
+            </div>
+        </div>
+        <div class="digi-menu-body">
+            <!--ITEM 1-->
+            <div class="digi-menu-item">
+                <div class="digi-menu-item-label">
+                    Acerca de
+                    <img class="pull-right" src="../bto/images/icon/Icon_arrow_normal.png" alt="icon" />
+                </div>
+                <div class="digi-menu-sub digi-menu-hide">
+                    <div class="digi-menu-sub-item">
+                        <div class="digi-menu-sub-item-label">
+                            Digisalud
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item active">
+                        <div class="digi-menu-sub-item-label">
+                            Preguntas Frecuentes
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item">
+                        <div class="digi-menu-sub-item-label">
+                            Términos de Uso y Políticas de <br> Privacidad
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item">
+                        <div class="digi-menu-sub-item-label">
+                            Contacto
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item">
+                        <div class="digi-menu-sub-item-label">
+                            Comparte
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--ITEM 2-->
+            <div class="digi-menu-item">
+                <div class="digi-menu-item-label">
+                    Otro item del menu
+                    <img class="pull-right" src="../bto/images/icon/Icon_arrow_normal.png" alt="icon" />
+                </div>
+                <div class="digi-menu-sub digi-menu-hide">
+                    <div class="digi-menu-sub-item">
+                        <div class="digi-menu-sub-item-label">
+                            Sub menú 1
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item">
+                        <div class="digi-menu-sub-item-label">
+                            Sub menú 2
+                        </div>
+                    </div>
+                    <div class="digi-menu-sub-item">
+                        <div class="digi-menu-sub-item-label">
+                            Sub menú 3
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /MENU DESPLEGABLE -->
+
+    <!-- MENU -->
+    <header class="header-digisalud dig-deg-orange">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+
+                <div class="col-sm-4 col-2">
+                    <div class=" section-menu">
+                        <img class="bto-icons-tam" src="../bto/images/icon/Icon_menu.png" alt="Digisalud" />
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-8">
+                    <div class="section-search">
+                        <img src="../bto/digisalud-logo.png" alt="Digisalud">
+                        <div class="inner-addon left-addon">
+                            <div><i class="fas fa-search"></i></div>
+                            <input type="search" class="col-md-12" placeholder="Búsqueda" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-2 text-right">
+                    <div class="section-conexion">
+
+                        <div class="d-none d-sm-block">
+                            <span>Conexión</span>
+                            <img id="btn-conex" class="bto-icons-tam" src="../bto/images/icon/Icon_conexion.png" alt="Digisalud" />
+                        </div>
+
+                        <img id="btn-conex" class="bto-icons-tam d-block d-sm-none" src="../bto/images/icon/Icon_conexion.png"
+                            alt="Digisalud" />
+
+                        <div class="digi-modal digi-popup body-section-conexion ocultar-pop">
+                            <div class="container-fluid">
+                                <div class="row ">
+
+                                    <div class="action-close-pop">
+                                        <i class="fas fa-times"></i>
+                                    </div>
+
+                                    <div class="col-md-12 text-center font-weight-bold pb-3">
+                                        <h5>Conexión a Internet</h5>
+                                    </div>
+
+                                    <div class="col-md-12 pb-3">
+                                        <div class="md-form">
+                                            <label for="c_redLocal">Red IP Local</label>
+                                            <input type="text" id="c_redLocal" class="form-control form-control-sm "
+                                                autocomplete="off">
+                                            <div class="div-validador text-left">
+                                                <div class="bto-validator">&nbsp;</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 text-left mb-3">
+                                        <div class="round">
+                                            <input type="checkbox" id="m_checkRedIpLocal" />
+                                            <label for="m_checkRedIpLocal"></label>
+                                            <span>Red IP Local</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 text-left">
+                                        <div class="round">
+                                            <input type="checkbox" id="m_checkInternet" />
+                                            <label for="m_checkInternet"></label>
+                                            <span>Internet</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 pt-5 pb-2 text-center">
+                                        <button class="btn btn-dig-blue">CONECTARSE</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- /MENU -->
+
+    <!--SUB MENU-->
+    <section class="dig-sub-header">
+        <div class="container-fluid">
+            <div class="row text-center align-items-end">
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col-6 text-right p-0 pr-1">
+                            <img src="../bto/images/icon/Icon_jornada.png" alt="Digisalud" />
+                        </div>
+                        <div class="col-6 text-left p-0 pl-1">
+                            <p class="mt-2 font-weight-bold">128</p>
+                        </div>
+                        <div class="col-12 d-none d-sm-block">
+                            <p>JORNADAS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col-6 text-right p-0 pr-1">
+                            <img src="../bto/images/icon/Icon_voluntarios.png" alt="Digisalud" />
+                        </div>
+                        <div class="col-6 text-left p-0 pl-1">
+                            <p class="mt-2 font-weight-bold">128</p>
+                        </div>
+                        <div class="col-12 d-none d-sm-block">
+                            <p>VOLUNTARIOS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col-6 text-right p-0 pr-1">
+                            <img src="../bto/images/icon/Icon_benefciarios.png" alt="Digisalud" />
+                        </div>
+                        <div class="col-6 text-left p-0 pl-1">
+                            <p class="mt-2 font-weight-bold">128</p>
+                        </div>
+                        <div class="col-12 d-none d-sm-block">
+                            <p>BENEFICIARIOS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row ">
+                        <div class="col-6 text-right p-0 pr-1">
+                            <img src="../bto/images/icon/Icon_comunidadmedica.png" alt="Digisalud" />
+                        </div>
+                        <div class="col-6 text-left p-0 pl-1">
+                            <p class="mt-2 font-weight-bold">128</p>
+                        </div>
+                        <div class="col-12 d-none d-sm-block">
+                            <p>COMUNIDAD MÉDICA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/SUB MENU-->
+
+    <!-- Contenido -->
+    <div id="sectionM2" class="clearfix container-fluid">
+
+        <!--CONTENIDO-->
+        <div id="sectionHomeRow" class="row dig-backg-texture align-items-center">
+
+            <!--SECCION IZQUIERDA-->
+            <div id="dig-section-left" class="col-md-6">
+                <div class="container">
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-auto">
+                            <h1>¡Regístrate!</h1>
+                            <p>
+                                Registra los datos de la  <br>
+                                institución y ayudanos a  <br>
+                                mejorar el mundo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/SECCION IZQUIERDA-->
+
+            <!--SECCION DERECHA FORMULARIO-->
+            <div id="dig-section-right" class="col-md-6 dig-backg-white">
+                <div class="container">
+                    <div class="row justify-content-md-center align-items-center">
+                        <div class="col-md-12 form-row  pt-5">
+                            <div class="col-md-6">
+                                <h2 class="font-weight-bold pt-4">Registro Institucional</h2>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="hidden" id="update_photo" value="0">
+                                <div id="div-edit-img-profile" class="pull-right">
+                                    <img id="edit-img-profile" src="../bto/images/icon/register.png" class="img-responsive"
+                                        alt="Profile Pictory">
+                                    <div id="div-btn-file">
+                                        <span class=" btn-file">
+                                            <i class="fa fa-pencil-alt text-white"></i>
+                                            <input name="file-input" id="file-input" type="file" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="md-form mt-0">
+                                    <label for="m12_1">*Nombre de instituci&oacute;n</label>
+                                    <input type="text" id="m12_1" class="form-control form-control-sm" autocomplete="off">
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="select">
+                                    <select id="m12_2" class="select-text" required>
+                                        <option disabled selected></option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                    </select>
+                                    <span class="select-highlight"></span>
+                                    <span class="select-bar"></span>
+                                    <label for="m12_2" class="select-label">*Tipo de instituci&oacute;n</label>
+                                </div>
+                                <div class="div-validador">
+                                    <div class="bto-validator">&nbsp;</div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="select">
+                                    <select id="m12_3" class="select-text" required>
+                                        <option disabled selected></option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                    <span class="select-highlight"></span>
+                                    <span class="select-bar"></span>
+                                    <label for="m12_3" class="select-label">*Sector</label>
+                                </div>
+                                <div class="div-validador">
+                                    <div class="bto-validator">&nbsp;</div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="select">
+                                    <select id="m12_4" class="select-text" required>
+                                        <option disabled selected></option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                    <span class="select-highlight"></span>
+                                    <span class="select-bar"></span>
+                                    <label for="m12_4" class="select-label">*Pa&iacute;s</label>
+                                </div>
+                                <div class="div-validador">
+                                    <div class="bto-validator">&nbsp;</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="select">
+                                    <select id="m12_5" class="select-text" required>
+                                        <option disabled selected></option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                    </select>
+                                    <span class="select-highlight"></span>
+                                    <span class="select-bar"></span>
+                                    <label for="m12_5" class="select-label">*Ciudad</label>
+                                </div>
+                                <div class="div-validador">
+                                    <div class="bto-validator">&nbsp;</div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="md-form mt-0">
+                                    <label for="m12_6">*Ciudades donde operan</label>
+                                    <input type="email" id="m12_6" class="form-control form-control-sm" autocomplete="off">
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="md-form mt-0">
+                                    <label for="m12_7">*Sobre la Instituci&oacute;n (máx. 400 caracteres)</label>
+                                    <textarea rows="4" type="email" id="m12_7" class="form-control form-control-sm"
+                                        autocomplete="off" maxlength="400"></textarea>
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 title-label pb-4">
+                                <label>*Acceso a pais(es)</label>
+                            </div>
+                            <div class="col-6 pb-2">
+                                <div class="round">
+                                    <input type="checkbox" id="m12_8" />
+                                    <label for="m12_8"></label>
+                                    <span>Colombia</span>
+                                </div>
+                            </div>
+                            <div class="col-6 pb-2">
+                                <div class="round">
+                                    <input type="checkbox" id="m12_9" />
+                                    <label for="m12_9"></label>
+                                    <span>México</span>
+                                </div>
+                            </div>
+                            <div class="col-6 pb-2">
+                                <div class="round">
+                                    <input type="checkbox" id="m12_10" />
+                                    <label for="m12_10"></label>
+                                    <span>Venezuela</span>
+                                </div>
+                            </div>
+
+                            <div class="col-12 pb-3 pt-5">
+                                <h2 class="font-weight-bold">Persona de contacto</h2>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="md-form mt-0">
+                                    <label for="m12_11">*Nombre (s)</label>
+                                    <input type="text" id="m12_11" class="form-control form-control-sm" autocomplete="off">
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="md-form mt-0">
+                                    <label for="r_lastname">*Apellido (s)</label>
+                                    <input type="text" id="r_lastname" class="form-control form-control-sm"
+                                        autocomplete="off">
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="select">
+                                    <select id="m12_12" class="select-text" required>
+                                        <option disabled selected></option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                    </select>
+                                    <span class="select-highlight"></span>
+                                    <span class="select-bar"></span>
+                                    <label for="m12_12" class="select-label">*G&eacute;nero</label>
+                                </div>
+                                <div class="div-validador">
+                                    <div class="bto-validator">&nbsp;</div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="md-form mt-0">
+                                    <label for="m12_13">*Nº de tel&eacute;fono celular</label>
+                                    <input type="text" id="m12_13" class="form-control form-control-sm " autocomplete="off">
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="md-form mt-0">
+                                    <label for="m12_15">Nº de tel&eacute;fono local</label>
+                                    <input type="text" id="m12_15" class="form-control form-control-sm " autocomplete="off">
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="md-form mt-0">
+                                    <label for="m12_14">*Cargo / Roll</label>
+                                    <input type="text" id="m12_14" class="form-control form-control-sm " autocomplete="off">
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="md-form mt-0">
+                                    <label for="m12_17">*Correo Electr&oacute;nico</label>
+                                    <input type="email" id="m12_17" class="form-control form-control-sm" autocomplete="off">
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="md-form mt-0">
+                                    <label for="m12_16">*Usuario</label>
+                                    <input type="email" id="m12_16" class="form-control form-control-sm" autocomplete="off">
+                                    <div class="div-validador">
+                                        <div class="bto-validator">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="md-form text-left">
+                                    <div class="campo-pass">
+                                        <div class="view-pass">
+                                            <i class="fas fa-eye"></i>
+                                        </div>
+                                        <label for="r_password">*Contraseña</label>
+                                        <input type="password" id="r_password" class="form-control form-control-sm"
+                                            autocomplete="off">
+                                        <div class="div-validador">
+                                            <div class="bto-validator">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="md-form text-left">
+                                    <div class="campo-pass">
+                                        <div class="view-pass">
+                                            <i class="fas fa-eye"></i>
+                                        </div>
+                                        <label for="rc_password">*Confirmar Contraseña</label>
+                                        <input type="password" id="rc_password" class="form-control form-control-sm"
+                                            autocomplete="off">
+                                        <div class="div-validador">
+                                            <div class="bto-validator">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="validate" class="clearfix  pb-5">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="round">
+                                    <input type="checkbox" id="r_check_data_private" />
+                                    <label for="r_check_data_private"></label>
+                                    <span>Mantener datos privados</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="round">
+                                    <input type="checkbox" id="r_check_terms" />
+                                    <label for="r_check_terms"></label>
+                                    <span> <a href="#">Acepto t&eacute;rminos y condiciones</a></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 pt-5">
+                                <div class="clearfix  pb-5">
+                                    <button id="r_btn_register" class="btn btn-dig-blue">Registrar</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--SECCION DERECHA FORMULARIO-->
+
+    </div>
+    <!--/CONTENIDO-->
+
+    <script type="text/javascript" src="../lib/MDB-Free/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../lib/MDB-Free/js/popper.min.js"></script>
+    <script type="text/javascript" src="../lib/MDB-Free/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../lib/MDB-Free/js/mdb.min.js"></script>
+    <script type="text/javascript" src="../lib/fontawesome-free-5.2.0-web/js/all.min.js"></script>
+    <script type="text/javascript" src="../bto/js/bto_script.js"></script>
+    <script>
+        $(document).ready(function () {
+            digiModule12.main();
+        });
+    </script>
+</body>
+
+</html>

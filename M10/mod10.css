@@ -1,0 +1,419 @@
+.btn {
+    box-shadow: none;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+#sectionM10 {
+    background: #eeeeee;
+    min-height: calc(100vh - 60px);
+}
+
+/*Seccion Jornada*/
+
+#sectionM10 #sec_jornada {
+    background: #ffffff;
+    padding: 50px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.jornada_img {
+    width: 120px;
+    float: left;
+}
+
+.jornada_img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.jornada_content {
+    width: calc(100% - 120px);
+    float: left;
+}
+
+.jornada_title {
+    padding: 0px 20px 10px;
+    width: 100%;
+}
+
+.jornada_title h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.jornada_val_item {
+    float: left;
+    padding: 5px 20px;
+}
+
+.jornada_val_item label {
+    font-size: 13px;
+}
+
+.jornada_val_item p {
+    margin: 0px;
+    margin-top: 5px;
+}
+
+.pesquisas img {
+    width: 30px;
+    margin: 5px;
+}
+
+/*SECTION INFO*/
+
+#sec_info {
+    background: #02409C;
+    width: 100%;
+    padding: 15px 20px;
+    overflow: hidden;
+    color: #fff;
+    position: relative;
+}
+
+.info_title {
+    float: left;
+    overflow: hidden;
+    width: 280px;
+    height: 100%;
+}
+
+.info_title img {
+    float: left;
+    height: 45px;
+    padding: 0px 10px;
+    margin-top: 1.5px
+}
+
+.info_title h2 {
+    float: left;
+    width: 200px;
+    margin: 0px !important;
+    line-height: 1.05;
+    font-weight: 100;
+    font-size: 24px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.info_content {
+    float: left;
+    overflow: hidden;
+    width: calc(100% - 280px);
+    height: 100%;
+}
+
+.info_content img {
+    /* height: 22px; */
+    padding: 0px 10px;
+    margin-top: 3px
+}
+
+.info_content p {
+    margin: 0px;
+    font-size: 15px;
+}
+
+.info_content_item {
+    width: 150px;
+    position: relative;
+}
+
+.info_content div {
+    float: left;
+}
+
+.info_content button {
+    float: left;
+    margin-top: 7px;
+    margin-left: 20px;
+}
+
+/* SECCION CARDS */
+
+#sectionM10 #sec_digcard {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 5px;
+}
+
+#sectionM10 #sec_digcard .digcard {
+    width: 33.3%;
+    padding: 5px;
+    float: left;
+}
+
+#sectionM10 #sec_digcard .digcard_wrap {
+    border-radius: 10px 10px 0px 0px;
+}
+
+#sectionM10 #sec_digcard .digcard .digcard_title {
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    background: #02409C;
+    text-align: center;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.digcard_body {
+    padding: 10px 0px;
+    background: #fff;
+    border-radius: 0px 0px 10px 10px
+}
+
+.digicard_cont_opt {
+    border-left: 4px solid #fff;
+    height: 80px;
+    width: 100%;
+    margin-bottom: 1px;
+}
+
+.digicard_body_opt_wrp {
+    padding: 0px 15px;
+    height: 80px;
+    width: 100%;
+}
+
+.digicard_body_opt {
+    border-bottom: 1px solid #e8e8e8;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.digicard_div_icon {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 10px auto;
+    margin-right: 15px;
+    background-size: cover;
+}
+
+.digicard_div_text {
+    float: left;
+    width: calc(100% - 130px);
+}
+
+.digicard_div_btn {
+    text-align: right;
+    float: right;
+    width: 70px;
+}
+
+.digicard_div_btn img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.type-sgv {
+    border-color: #F85018;
+}
+
+.type-sgv .digicard_div_icon {
+    background-image: url('../bto/images/pesq/sgv-silver.png');
+}
+
+.type-ant {
+    border-color: #FAC70F;
+}
+
+.type-ant .digicard_div_icon {
+    background-image: url('../bto/images/pesq/ant-silver.png');
+}
+
+.type-vis {
+    border-color: #595094;
+}
+
+.type-vis .digicard_div_icon {
+    background-image: url('../bto/images/pesq/vis-silver.png');
+}
+
+.type-san {
+    border-color: #EB4023;
+}
+
+.type-san .digicard_div_icon {
+    background-image: url('../bto/images/pesq/san-silver.png');
+}
+
+.type-meg {
+    border-color: #332B83;
+}
+
+.type-meg .digicard_div_icon {
+    background-image: url('../bto/images/pesq/meg-silver.png');
+}
+
+.type-vac {
+    border-color: #4077B3;
+}
+
+.type-vac .digicard_div_icon {
+    background-image: url('../bto/images/pesq/vac-silver.png');
+}
+
+.type-lab {
+    border-color: #109149;
+}
+
+.type-lab .digicard_div_icon {
+    background-image: url('../bto/images/pesq/lab-silver.png');
+}
+
+.type-aud {
+    border-color: #1958A5;
+}
+
+.type-aud .digicard_div_icon {
+    background-image: url('../bto/images/pesq/aud-silver.png');
+}
+
+.type-ort {
+    border-color: #EE8917;
+}
+
+.type-ort .digicard_div_icon {
+    background-image: url('../bto/images/pesq/ort-silver.png');
+}
+
+.type-opt {
+    border-color: #C1D86E;
+}
+
+.type-opt .digicard_div_icon {
+    background-image: url('../bto/images/pesq/opt-silver.png');
+}
+
+.type-odt {
+    border-color: #51B6D1;
+}
+
+.type-odt .digicard_div_icon {
+    background-image: url('../bto/images/pesq/odt-silver.png');
+}
+
+.type-otros .digicard_div_text {
+    width: calc(100% - 70px);
+}
+
+.type-collap .digicard_div_text {
+    width: calc(100% - 90px);
+}
+
+.div-collapse {
+    padding: 20px;
+    background: #fafafa;
+}
+
+.div-collapse button {
+    margin: 5px;
+}
+
+.digicard_div_btn.arrow {
+    width: 30px;
+}
+
+.digicard_div_btn.arrow div {
+    width: 25px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.digicard_div_btn.arrow div {
+    background-image: url('../bto/images/icon/Icon_arrow_pressed.png');
+}
+
+.collapsed .digicard_div_btn.arrow div {
+    background-image: url('../bto/images/icon/Icon_arrow_normal.png');
+}
+
+@media only screen and (min-width:998px) {
+    .info_title {
+        width: 350px;
+    }
+    .info_content {
+        width: calc(100% - 350px);
+    }
+}
+
+@media only screen and (max-width:920px) {
+    .info_content {
+        width: 50%;
+    }
+    .info_title {
+        margin-top: 20px;
+        width: 50%;
+    }
+    .digicard_div_text {
+        width: calc(100% - 90px);
+    }
+    .digicard_div_icon {
+        display: none;
+    }
+    .digicard_body_opt_wrp {
+        padding: 0px 5px;
+    }
+}
+
+@media only screen and (max-width:710px) {
+    #sectionM10 #sec_jornada{
+        padding: 30px 0px;
+    }
+    .jornada_content{
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        float:none;
+    }
+    .jornada_img{
+        display: none;
+    }
+    .digicard_div_icon {
+        display: block;
+    }
+    .digicard_body_opt_wrp {
+        padding: 0px 15px;
+    }
+    .info_content {
+        width: 100%;
+        max-width: 300px;
+        float: none;
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+    .info_title {
+        margin-top: 0px;
+        width: 100%;
+        max-width: 300px;
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px 0px 30px;
+    }
+    #sectionM10 #sec_digcard .digcard {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+        float: none;
+    }
+    .info_content_item {
+        width: 135px;
+    }
+    .info_content button {
+        margin-top: 9px;
+        margin-left: 14px;
+    }
+}

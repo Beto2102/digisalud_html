@@ -1,0 +1,419 @@
+/* Comunes */
+
+.bag-silver {
+    background: #f4f4f4;
+}
+
+.dig-backg-white {
+    background: #fff;
+}
+
+.div_btns button {
+    margin: 0px!important;
+    margin: 5px!important;
+}
+
+.border-dig-green {
+    border-color: #52D589!important;
+}
+
+.border-dig-red {
+    border-color: #EB4023!important;
+}
+
+.border-dig-blue {
+    border-color: #09429b!important;
+}
+
+.border-dig-blue-light {
+    border-color: #2e7de1!important;
+}
+
+
+/* Modulo 13 Index */
+
+#sectionM13, #sectionM13detail {
+    overflow: scroll;
+}
+
+/* Seccion Izquierda */
+
+#sectionM13 #windows-left {
+    float: left;
+    width: 100%;
+    position: relative;
+    display: none;
+}
+
+#sectionM13 #windows-left div {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Seccion Derecha */
+
+#sectionM13 #windows-right {
+    float: left;
+    width: 100%;
+    height: calc(100vh - 60px);
+    position: relative;
+    -webkit-box-shadow: -5px 0 9px 0 rgba(189, 189, 189, .2);
+    -moz-box-shadow: -5px 0 9px 0 rgba(189, 189, 189, .2);
+    box-shadow: -5px 0 9px 0 rgba(189, 189, 189, .2);
+}
+
+#sectionM13 #windows-right .container:first-child {
+    background: #ffffff;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+}
+
+/* Tarjetas de jornadas */
+
+#sectionM13 h2 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#sectionM13 .find-search {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+#sectionM13 .card-search {
+    max-width: 750px;
+    height: auto;
+    min-height: 200px;
+    background: #ffffff;
+    margin: 10px 0px auto;
+    padding: 30px 30px 30px;
+    border-left: 10px solid transparent;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#sectionM13 .card-title {
+    float: left;
+    width: 100%;
+}
+
+#sectionM13 .card-title h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#sectionM13 .card-title p {
+    margin-bottom: 0px;
+}
+
+#sectionM13 .card-date {
+    float: left;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+#sectionM13 .card-date h2 {
+    font-size: 20px;
+}
+
+#sectionM13 .card-pesquise {
+    float: left;
+    width: 100%;
+}
+
+#sectionM13 .card-pesquise img {
+    width: 30px;
+    height: 30px;
+    margin: 4px;
+}
+
+#sectionM13 .card-info {
+    float: left;
+    width: 100%;
+    padding-top: 10px;
+}
+
+#sectionM13 .card-info h2 {
+    font-size: 22px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#sectionM13 .card-info .text-left {
+    float: left;
+    width: 60%;
+}
+
+#sectionM13 .card-info .text-right {
+    float: left;
+    width: 40%;
+}
+
+#sectionM13 .checker {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+@media only screen and (min-width:767px) {
+    #sectionM13, #sectionM13detail {
+        overflow: hidden;
+    }
+    #sectionM13 #windows-left {
+        width: 50%;
+        display: block;
+        height: calc(100vh - 60px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionM13 #windows-right {
+        overflow-y: scroll;
+        width: 50%;
+    }
+    #sectionM13 #windows-right .container:first-child {
+        padding: 3rem!important;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    #sectionM13 .card-title {
+        width: 60%;
+    }
+    #sectionM13 .card-date {
+        width: 40%;
+        text-align: right;
+    }
+    #sectionM13 .card-pesquise {
+        width: 55%;
+    }
+    #sectionM13 .card-info {
+        width: 45%;
+        padding-top: 0px;
+    }
+}
+
+/* ===================================================================================================== */
+
+/* ===================================================================================================== */
+
+/* Modulo 13 Detail */
+
+#sectionM13detail #windows-left {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+#sectionM13detail #windows-left .container:first-child {
+    background: #fff;
+}
+
+#sectionM13detail .card-search-detail {
+    background: white;
+    width: 100%;
+    padding: 20px 20px;
+    border-top: 1px solid #ced4da!important;
+    border-bottom: 1px solid #ced4da!important;
+    border-left: 5px solid transparent!important;
+}
+
+#sectionM13detail .card-search-detail:hover {
+    background: #f4f4f4;
+    border-left-color: #09429B!important;
+}
+
+#sectionM13detail .card-search-detail.border-dig-green:hover {
+    background: #f4f4f4;
+    border-left-color: #52D589!important;
+}
+
+#sectionM13detail .card-search-detail.border-dig-red:hover {
+    background: #f4f4f4;
+    border-left-color: #EB4023!important;
+}
+
+#sectionM13detail .card-search-detail:hover {
+    background: #f4f4f4;
+    border-left-color: #09429B!important;
+}
+
+#sectionM13detail .card-body-detail {
+    float: left;
+    width: 70%;
+}
+
+#sectionM13detail .card-body-detail h2 {
+    font-size: 31px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#sectionM13detail .card-body-detail h3 {
+    font-size: 22px;
+    margin-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#sectionM13detail .card-body-detail h3 span {
+    font-weight: bold;
+}
+
+#sectionM13detail .card-body-detail p {
+    margin-bottom: 0px;
+}
+
+#sectionM13detail .card-button-detail {
+    text-align: right;
+    float: left;
+    width: 30%;
+}
+
+#sectionM13detail .card-button-detail button {
+    width: 120px;
+}
+
+#sectionM13detail .card-search-detail:hover .card-button-detail button {
+    border-color: #2e7de1;
+    color: #2e7de1;
+    /* border-color: #09429B;
+    color: #09429B; */
+}
+
+#sectionM13detail .card-search-detail:hover .card-button-detail button:hover {
+    color: #fff;
+}
+
+#sectionM13detail #windows-right {
+    overflow-y: scroll;
+    width: 100%;
+    background: #ffffff;
+}
+
+#sectionM13detail .new-pesquisas {
+    max-width: 100%;
+}
+
+#sectionM13detail .new-pesquisas img {
+    width: 35px;
+    margin: 5px;
+}
+
+#sectionM13detail #windows-right p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#sectionM13detail #windows-right label {
+    color: #ACAEAF;
+    font-size: 16px;
+}
+
+#sectionM13detail #windows-right .round {
+    margin: 10px 0px;
+}
+
+#sectionM13detail #windows-right .round span {
+    font-size: 18px;
+    color: #ACAEAF;
+}
+
+#sectionM13detail #windows-right .round span span {
+    margin-left: 15px;
+}
+
+#sectionM13detail #windows-right .round input[type=checkbox]:checked+label+span, #sectionM13detail #windows-right .round input[type=checkbox]:checked+label+span span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #484849 !important;
+}
+
+/* #sectionM13 */
+
+.bg-dig-purple {
+    background: #595094;
+    color: #ffF;
+}
+
+.bg-dig-green-light {
+    background: #52D589;
+    color: #ffF;
+}
+
+.bg-dig-orange {
+    background: #EB4023;
+    color: #ffF;
+}
+
+#sectionM13detail #windows-right .new-indicator {
+    float: left;
+    width: 33.3%;
+}
+
+#sectionM13detail #windows-right .new-indicator .title {
+    height: 45px;
+    line-height: 20px;
+    text-align: center;
+}
+
+#sectionM13detail #windows-right .new-indicator .cuadro {
+    font-size: 45px;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0 auto !important;
+}
+
+.div_btns {
+    text-align: center;
+}
+
+#sectionM13detail .asignate_do{
+    /* display: none; */
+}
+
+#sectionM13detail .asignate_do .round  label{
+    display: none;
+}
+#sectionM13detail .asignate_do .round  span{
+    margin-left: 0px;
+}
+#sectionM13detail .asignate_do.editando .round label{
+    display: block;
+}
+#sectionM13detail .asignate_do.editando .round  span{
+    margin-left: 30px;
+}
+#sectionM13detail .save_vol,#sectionM13detail .asignate_do{
+    display: none;
+}
+
+
+@media only screen and (min-width:767px) {
+    #sectionM13detail #windows-left {
+        overflow-y: scroll;
+        width: 50%;
+        height: calc(100vh - 60px);
+    }
+    #sectionM13detail #windows-right {
+        overflow-y: scroll;
+        width: 50%;
+        height: calc(100vh - 60px);
+    }
+    .div_btns {
+        text-align: left;
+    }
+    #sectionM13detail #windows-right .container:first-child {
+        padding: 0px 3rem!important;
+    }
+}
