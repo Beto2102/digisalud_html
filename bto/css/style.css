@@ -157,9 +157,11 @@ textarea:focus:not([readonly]) {
     margin: 0;
     font-weight: 900;
 }
-.btn{
+
+.btn {
     box-shadow: none!important;
 }
+
 .btn-dig-white {
     padding-top: 2px;
     padding: 0 20px;
@@ -267,7 +269,6 @@ textarea:focus:not([readonly]) {
     border-radius: 50px;
     background: #ffffff!important;
 }
-
 
 .btn-dig-silver-inv:hover {
     background: #2e7de1;
@@ -388,7 +389,7 @@ textarea:focus:not([readonly]) {
     font-size: 14px;
     font-family: ProximaNovaAltRegular;
     color: #737373;
-    margin-left:30px!important;
+    margin-left: 30px!important;
 }
 
 .header-digisalud {
@@ -1824,8 +1825,27 @@ pesqui {
 }
 
 #sectionM4 .round span {
-    font-size: 20px;
+    font-size: 17px;
     font-family: ProximaNovaRegular;
+    margin-left: 40px!important;
+}
+
+.subtitle-m4 {
+    padding: 20px initial 10px;
+}
+
+.subtitle-m4 h3 {
+    font-weight: 300!important;
+    font-size: 20px!important;
+}
+
+.title-m4 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.title-m4 h3 {
+    font-size: 25px!important;
 }
 
 #sectionM6 .tipo-re-fa {
@@ -1869,7 +1889,7 @@ pesqui {
     max-width: 100%;
     position: relative;
     border-bottom: 1px solid #ced4da;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 #sectionM4 table {
@@ -2016,14 +2036,15 @@ input[type=time]::-webkit-clear-button {
     color: #ACAEAF!important;
 }
 
-
 .title-label label {
     color: #ACAEAF;
     padding-bottom: 10px;
 }
-.text-silver{
-    color: #ACAEAF!important; 
+
+.text-silver {
+    color: #ACAEAF!important;
 }
-.text-dig-blue-light{
-    color:#2e7de1;
+
+.text-dig-blue-light {
+    color: #2e7de1;
 }

@@ -29,7 +29,6 @@
     border-color: #2e7de1!important;
 }
 
-
 /* Modulo 13 Index */
 
 #sectionM13, #sectionM13detail {
@@ -158,6 +157,7 @@
     height: 35px;
     margin: 5px;
 }
+
 @media only screen and (min-width:767px) {
     #sectionM13, #sectionM13detail {
         overflow: hidden;
@@ -339,8 +339,9 @@
 /* #sectionM13 */
 
 .bg-dig-purple {
-    background: #595094;
-    color: #ffF;
+    border: 3px solid #595094;
+    /* background: #595094; */
+    color: #595094;
 }
 
 .bg-dig-green-light {
@@ -355,12 +356,17 @@
 
 #sectionM13detail #windows-right .new-indicator {
     float: left;
-    width: 33.3%;
+    width: auto;
+    padding-right: 30px
 }
 
 #sectionM13detail #windows-right .new-indicator .title {
-    height: 45px;
-    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 35px;
+    padding-bottom: 10px;
+    line-height: 15px;
     text-align: center;
 }
 
@@ -370,34 +376,38 @@
     height: 100px;
     border-radius: 5px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 15px;
     margin: 0 auto !important;
+    cursor: pointer;
 }
 
 .div_btns {
     text-align: center;
 }
 
-#sectionM13detail .asignate_do{
+#sectionM13detail .asignate_do {
     /* display: none; */
 }
 
-#sectionM13detail .asignate_do .round  label{
-    display: none;
-}
-#sectionM13detail .asignate_do .round  span{
-    margin-left: 0px;
-}
-#sectionM13detail .asignate_do.editando .round label{
-    display: block;
-}
-#sectionM13detail .asignate_do.editando .round  span{
-    margin-left: 30px;
-}
-#sectionM13detail .save_vol,#sectionM13detail .asignate_do{
+#sectionM13detail .asignate_do .round label {
     display: none;
 }
 
+#sectionM13detail .asignate_do .round span {
+    margin-left: 0px;
+}
+
+#sectionM13detail .asignate_do.editando .round label {
+    display: block;
+}
+
+#sectionM13detail .asignate_do.editando .round span {
+    margin-left: 30px;
+}
+
+#sectionM13detail .save_vol, #sectionM13detail .asignate_do {
+    display: none;
+}
 
 @media only screen and (min-width:767px) {
     #sectionM13detail #windows-left {
@@ -416,4 +426,20 @@
     #sectionM13detail #windows-right .container:first-child {
         padding: 0px 3rem!important;
     }
+}
+
+.round.round-large{
+    margin-top: 30px;
+}
+.round.round-large label {
+    height: 30px;
+    width: 30px;
+    left:initial;
+    top:initial;
+}
+.round.round-large label::after {
+    height: 5px;
+    left: 7px;
+    top: 10px;
+    width: 15px;
 }

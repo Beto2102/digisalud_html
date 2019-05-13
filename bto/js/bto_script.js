@@ -267,6 +267,91 @@ var digiModule4 = {
         var that = this;
         btoFunction.mainPopUp();
         btoFunction.stepModule4();
+
+        // Cargar data
+        var HistorialData = Data.getHistorialDeSalud();
+        var html = ' ';
+        HistorialData.forEach(function (x) {
+            var pd = '';
+            if (x.type == 1) {
+                html += structureHTML.title(x.section);
+            } else if (x.type == 2) {
+                pd = ' pt-3';
+                html += structureHTML.subTitle(x.section, '');
+            }
+            var cont = 0;
+            x.data.forEach(function (x2, key) {
+                if (key == 0) {
+                    html += '<div class="col-12 ' + pd + '">';
+                }
+                if (cont == 2 && x2.type == 'checkEncuesta') {
+                    html += '</div>';
+                    html += '<div class="col-12 pt-3">';
+                    cont = 0;
+                } else if (x2.type == 'input') {
+                    html += '</div>';
+                    html += '<div class="col-12 pt-3">';
+                } else if (x2.type == 'break') {
+                    html += '</div>';
+                    html += '<div class="col-12 pt-5">';
+                }
+                switch (x2.type) {
+                    case 'input':
+                        html += structureHTML.input(x2.id, x2.name);
+                        break;
+                    case 'checkEncuesta':
+                        html += structureHTML.checkEncuesta(x2.id, x2.name);
+                        break;
+                    default:
+                        break;
+                }
+                cont++;
+                if (key == x.data.length - 1) {
+                    html += '</div>';
+                }
+            });
+        });
+        $("#aqui1").after(html);
+
+        var AntecedentesData = Data.getAntecendentesFamiliares();
+        var html = ' ';
+        AntecedentesData.forEach(function (x) {
+            var pd = '';
+            if (x.type == 1) {
+                html += structureHTML.title(x.section);
+            } else if (x.type == 2) {
+                pd = ' pt-4';
+                html += structureHTML.subTitle(x.section, 'pt-5');
+            }
+            var cont = 0;
+            x.data.forEach(function (x2, key) {
+                if (key == 0) {
+                    html += '<div class="col-12 ' + pd + '">';
+                }
+                if (cont == 2) {
+                    html += '</div>';
+                    html += '<div class="col-12 pt-4">';
+                    cont = 0;
+                }
+                switch (x2.type) {
+                    case 'input':
+                        html += structureHTML.input(x2.id, x2.name);
+                        break;
+                    case 'checkEncuesta':
+                        html += structureHTML.checkEncuesta(x2.id, x2.name);
+                        break;
+                    default:
+                        break;
+                }
+                cont++;
+                if (key == x.data.length - 1) {
+                    html += '</div>';
+                }
+            });
+        });
+        $("#aqui2").after(html);
+
+
         $('.inicio').show();
 
         $('.colap').on("click", function () {
@@ -326,6 +411,7 @@ var digiModule4 = {
         $(".ocul-emp").hide();
         $(".ocul-emp2").hide();
         $(".ocul-dis").hide();
+
         $('input[type=radio][name=radio-dir]').change(function () {
             if (this.id == 'dir_si') {
                 $(".ocul-dir").show();
@@ -439,7 +525,7 @@ var digiModule6 = {
             }
 
         });
-        $(document).on('click','#dir_no',function(){
+        $(document).on('click', '#dir_no', function () {
             $("body").removeClass("no-scroller");
             $("#div-oculto").removeClass("body-oscurecer");
             $(".digi-modal").addClass("ocultar-pop");
@@ -450,6 +536,29 @@ var digiModule6 = {
 var digiModule10 = {
     main: function () {
         btoFunction.mainPopUp();
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            navText: ["<img src='../bto/images/icon/Icon_arrow_left.png'>", "<img src='../bto/images/icon/Icon_arrow_right.png'>"],
+            nav: true,
+            //  autoplay: true,
+            //  autoplayTimeout: 10000,
+            //  autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                400: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items:4
+                }
+            }
+        });
     }
 };
 var digiModule12 = {
@@ -504,7 +613,7 @@ var digiModule13 = {
                 $(".dont-search").hide();
                 var html = '';
                 for (var x = 0; x < 5; x++) {
-                    html += structureHTML.cardModule13(1, 'Pedro Perez', 'Odontologo', 'Valencia', 'border-dig-blue');
+                    html += structureHTML.cardModule13(1, 'Pedro Perez', 'Odontologo', 'Valencia', 'border-dig-blue', x);
                 }
                 $("#response-search").html(html);
                 $(".new-noresults").show();
@@ -518,7 +627,7 @@ var digiModule13 = {
 
             var html = '';
             for (var x = 0; x < 3; x++) {
-                html += structureHTML.cardModule13(2, 'Pedro Perez', 'Odontologo', 'Valencia', 'border-dig-green');
+                html += structureHTML.cardModule13(2, 'Pedro Perez', 'Odontologo', 'Valencia', 'border-dig-green', x);
             }
             $(".dont-search").hide();
             $("#response-search").html(html);
@@ -548,7 +657,7 @@ var digiModule13 = {
             $(".dont-search").hide();
             var html = '';
             for (var x = 0; x < 5; x++) {
-                html += structureHTML.cardModule13(1, 'Pedro Perez', 'Odontologo', 'Valencia', 'border-dig-blue');
+                html += structureHTML.cardModule13(1, 'Pedro Perez', 'Odontologo', 'Valencia', 'border-dig-blue', x);
             }
             $("#response-search").html(html);
             $(".new-noresults").show();
@@ -1096,12 +1205,12 @@ var structureHTML = {
             '           <div class="row">' +
 
             '               <div class="col-1 col-md-1 pt-4">' +
-            '                   <div class="round">'+
-            '                       <input type="checkbox" id="turn_1" />'+
-            '                       <label for="turn_1"></label>'+
-            '                       <span></span>'+
-            '                   </div>'+
-            '               </div>'+
+            '                   <div class="round">' +
+            '                       <input type="checkbox" id="turn_1" />' +
+            '                       <label for="turn_1"></label>' +
+            '                       <span></span>' +
+            '                   </div>' +
+            '               </div>' +
             '               <div class="col-6 col-md-3">' +
             '                   <div class="md-form w">' +
             '                       <label for="c_redLocal">Fecha</label>' +
@@ -1328,7 +1437,7 @@ var structureHTML = {
             + '</div>'
             + '</div>';
     },
-    cardModule13: function (_type, _name, _cargo, _country, _color) {
+    cardModule13: function (_type, _name, _cargo, _country, _color, _id) {
         var html = ' ';
 
         html = '<div class="card-search-detail ' + _color + '">'
@@ -1339,8 +1448,15 @@ var structureHTML = {
             + '  </div>';
         if (_type == 1) {
             html += '<div class="card-button-detail">'
-                + '   <button class="btn_add btn btn-dig-silver-inv">AGREGAR</button>'
-                + '   <button class="btn_invite mt-3 btn btn-dig-silver-inv">INVITAR</button>'
+
+                + '<div class="round round-large">'
+                + '<input type="checkbox" id="' + _id + '"/>'
+                + '<label for="' + _id + '"></label>'
+                + '<span></span>'
+                + '</div>'
+
+                // + '   <button class="btn_add btn btn-dig-silver-inv">AGREGAR</button>'
+                // + '   <button class="btn_invite mt-3 btn btn-dig-silver-inv">INVITAR</button>'
                 + '</div>';
         } else if (_type == 2) {
             html += '<div class="card-button-detail edit_vol">'
@@ -1359,5 +1475,188 @@ var structureHTML = {
         html += '</div>';
 
         return html;
+    },
+
+    // Formularios
+    title: function (_title) {
+        return '<div class="col-12 title-m4">' +
+            '       <h3>' + _title + '</h3>' +
+            '   </div>';
+    },
+    subTitle: function (_title, _paT) {
+        return '<div class="col-12 subtitle-m4 ' + _paT + '">' +
+            '       <h3>' + _title + '</h3>' +
+            '   </div>';
+    },
+    input: function (_id, _name) {
+        return '<div class="md-form mt-3">' +
+            '       <label for="' + _id + '">' + _name + '</label>' +
+            '       <input type="text" id="' + _id + '" class="form-control form-control-sm" autocomplete="off">' +
+            '       <div class="div-validador">' +
+            '           <div class="bto-validator">&nbsp;</div>' +
+            '       </div>' +
+            '   </div>';
+    },
+    checkEncuesta: function (_id, _name) {
+        return '<div class="tipo-re-encu">' +
+            '        <div class="round">' +
+            '            <input type="checkbox" id="' + _id + '" />' +
+            '            <label for="' + _id + '"></label>' +
+            '           <span>' + _name + '</span>' +
+            '       </div>' +
+            '   </div>';
     }
 };
+
+// Data
+var Data = {
+    getHistorialDeSalud: function () {
+        return [
+            {
+                'section': 'Al Nacer',
+                'type': '2',
+                'data': [
+                    { 'id': 'a1', 'name': 'Fórceps', 'type': 'checkEncuesta' },
+                    { 'id': 'a2', 'name': 'Ictericia', 'type': 'checkEncuesta' },
+                    { 'id': 'a3', 'name': 'Prematuro', 'type': 'checkEncuesta' },
+                    { 'id': 'a4', 'name': 'Otro (indique)', 'type': 'input' },
+                ]
+            }, {
+                'section': 'Virus',
+                'type': '2',
+                'data': [
+                    { 'id': 'a5', 'name': 'Meningitis', 'type': 'checkEncuesta' },
+                    { 'id': 'a6', 'name': 'Respiratorios', 'type': 'checkEncuesta' },
+                    { 'id': 'a7', 'name': 'Sarampión', 'type': 'checkEncuesta' },
+                    { 'id': 'a8', 'name': 'Varicela', 'type': 'checkEncuesta' },
+                    { 'id': 'a9', 'name': 'Otro (indique)', 'type': 'input' },
+                ]
+            }, {
+                'section': 'Padecimientos',
+                'type': '2',
+                'data': [
+                    { 'id': 'a10', 'name': 'Anemia', 'type': 'checkEncuesta' },
+                    { 'id': 'a11', 'name': 'Asma', 'type': 'checkEncuesta' },
+                    { 'id': 'a12', 'name': 'Diábetes', 'type': 'checkEncuesta' },
+                    { 'id': 'a13', 'name': 'Epilepsia', 'type': 'checkEncuesta' },
+                    { 'id': 'a14', 'name': 'Malformaciones Congénitas', 'type': 'checkEncuesta' },
+                    { 'id': 'a15', 'name': 'Otro (indique)', 'type': 'input' },
+                ]
+            }, {
+                'section': 'Dificultades',
+                'type': '2',
+                'data': [
+                    { 'id': 'a16', 'name': 'Lenguaje', 'type': 'checkEncuesta' },
+                    { 'id': 'a17', 'name': 'Auditiva', 'type': 'checkEncuesta' },
+                    { 'id': 'a18', 'name': 'Visual', 'type': 'checkEncuesta' },
+                    { 'id': 'a19', 'name': 'Aprendizaje', 'type': 'checkEncuesta' },
+                    { 'id': 'a20', 'name': 'Otro (indique)', 'type': 'input' },
+                ]
+            }, {
+                'section': 'Atención Especial',
+                'type': '2',
+                'data': [
+                    { 'id': 'a21', 'name': 'Neurológica', 'type': 'checkEncuesta' },
+                    { 'id': 'a22', 'name': 'Psicológica', 'type': 'checkEncuesta' },
+                    { 'id': 'a23', 'name': 'Psicopedagógica', 'type': 'checkEncuesta' },
+                    { 'id': 'a24', 'name': 'Psiquiátrica', 'type': 'checkEncuesta' },
+                    { 'id': 'a25', 'name': 'Terapia del Lenguaje', 'type': 'checkEncuesta' },
+                    { 'id': 'a26', 'name': 'Terapia Ocupacional', 'type': 'checkEncuesta' },
+                    { 'id': 'a27', 'name': 'Otro (indique)', 'type': 'input' },
+                ]
+            }, {
+                'section': 'Tipo de Sangre',
+                'type': '2',
+                'data': [
+                    { 'id': 'a28', 'name': 'AB+', 'type': 'checkEncuesta' },
+                    { 'id': 'a29', 'name': 'AB-', 'type': 'checkEncuesta' },
+                    { 'id': 'a30', 'name': 'A+', 'type': 'checkEncuesta' },
+                    { 'id': 'a31', 'name': 'A-', 'type': 'checkEncuesta' },
+                    { 'id': 'a32', 'name': 'B+', 'type': 'checkEncuesta' },
+                    { 'id': 'a33', 'name': 'B-', 'type': 'checkEncuesta' },
+                    { 'id': 'a34', 'name': 'O+', 'type': 'checkEncuesta' },
+                    { 'id': 'a35', 'name': 'O-', 'type': 'checkEncuesta' },
+                    { 'id': '', 'name': '', 'type': 'break' },
+                ]
+            }, {
+                'section': 'Factor',
+                'type': '2',
+                'data': [
+                    { 'id': 'a37', 'name': 'rh', 'type': 'checkEncuesta' },
+                    { 'id': '', 'name': '', 'type': 'break' },
+                ]
+            }, {
+                'section': 'Indique Alergias',
+                'type': '2',
+                'data': [
+                    { 'id': 'a38', 'name': 'Rinitis', 'type': 'checkEncuesta' },
+                    { 'id': 'a39', 'name': 'Urticaria', 'type': 'checkEncuesta' },
+                    { 'id': 'a40', 'name': 'Anafiláxia', 'type': 'checkEncuesta' },
+                    { 'id': 'a41', 'name': 'Respiratorias', 'type': 'checkEncuesta' },
+                    { 'id': 'a42', 'name': 'Asma', 'type': 'checkEncuesta' },
+                    { 'id': 'a43', 'name': 'Dermatológica', 'type': 'checkEncuesta' },
+                    { 'id': 'a44', 'name': 'Conjuntivitis', 'type': 'checkEncuesta' },
+                    { 'id': 'a45', 'name': 'Otro (indique)', 'type': 'input' },
+                ]
+            }
+        ]
+    },
+    getAntecendentesFamiliares: function () {
+        return [
+            {
+                'section': 'Antecedentes familiares',
+                'type': '1',
+                'data': [
+                    { 'id': '1', 'name': 'Anemia', 'type': 'checkEncuesta' },
+                    { 'id': '2', 'name': 'Asma', 'type': 'checkEncuesta' },
+                    { 'id': '3', 'name': 'Cardiovasculares', 'type': 'checkEncuesta' },
+                    { 'id': '4', 'name': 'Ceguera', 'type': 'checkEncuesta' },
+                    { 'id': '5', 'name': 'Diábetes', 'type': 'checkEncuesta' },
+                    { 'id': '6', 'name': 'Epilepsia', 'type': 'checkEncuesta' },
+                    { 'id': '7', 'name': 'Discapacidad', 'type': 'checkEncuesta' },
+                    { 'id': '8', 'name': 'Glaucoma   ', 'type': 'checkEncuesta' },
+                    { 'id': '9', 'name': 'Hepáticas', 'type': 'checkEncuesta' },
+                    { 'id': '10', 'name': 'Hipertensión', 'type': 'checkEncuesta' },
+                    { 'id': '11', 'name': 'Hipertensión', 'type': 'checkEncuesta' },
+                    { 'id': '12', 'name': 'Meningitis', 'type': 'checkEncuesta' },
+                    { 'id': '13', 'name': 'Mentales', 'type': 'checkEncuesta' },
+                    { 'id': '14', 'name': 'Sordera', 'type': 'checkEncuesta' },
+                    { 'id': '15', 'name': 'Várices', 'type': 'checkEncuesta' },
+                ]
+            }, {
+                'section': 'Cáncer',
+                'type': '2',
+                'data': [
+                    { 'id': '17', 'name': 'de Mama', 'type': 'checkEncuesta' },
+                    { 'id': '18', 'name': 'de Riñón', 'type': 'checkEncuesta' },
+                    { 'id': '19', 'name': 'de Pulmón', 'type': 'checkEncuesta' },
+                    { 'id': '20', 'name': 'de Hígado', 'type': 'checkEncuesta' },
+                    { 'id': '21', 'name': 'de Próstata', 'type': 'checkEncuesta' },
+                    { 'id': '22', 'name': 'de Colon', 'type': 'checkEncuesta' },
+                    { 'id': '23', 'name': 'Cerebral', 'type': 'checkEncuesta' },
+                    { 'id': '24', 'name': 'de Piel', 'type': 'checkEncuesta' },
+                    { 'id': '25', 'name': 'de Vejiga', 'type': 'checkEncuesta' },
+                    { 'id': '26', 'name': 'de Estómago', 'type': 'checkEncuesta' },
+                    { 'id': '27', 'name': 'de Páncreas', 'type': 'checkEncuesta' },
+                    { 'id': '28', 'name': 'Leucemia', 'type': 'checkEncuesta' },
+                    { 'id': '29', 'name': 'Linfoma No Hodking', 'type': 'checkEncuesta' }
+                ]
+            }, {
+                'section': 'Malformaciones congénitas',
+                'type': '2',
+                'data': [
+                    { 'id': '30', 'name': 'Labio Leporino', 'type': 'checkEncuesta' },
+                    { 'id': '31', 'name': 'Pie de Equino', 'type': 'checkEncuesta' },
+                    { 'id': '32', 'name': 'Polidactilia', 'type': 'checkEncuesta' },
+                    { 'id': '33', 'name': 'Espina Bífida', 'type': 'checkEncuesta' },
+                    { 'id': '34', 'name': 'Fisura Palatina', 'type': 'checkEncuesta' },
+                    { 'id': '35', 'name': 'Pie Deforme', 'type': 'checkEncuesta' },
+                    { 'id': '36', 'name': 'Anencefalia', 'type': 'checkEncuesta' },
+                    { 'id': '37', 'name': 'Hidrocefália', 'type': 'checkEncuesta' },
+                    { 'id': '38', 'name': 'Displasia de la Cadera', 'type': 'checkEncuesta' },
+                    { 'id': '39', 'name': ' Pie Deforme', 'type': 'checkEncuesta' }
+                ]
+            }
+        ];
+    },
+}

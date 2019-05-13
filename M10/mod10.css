@@ -15,13 +15,13 @@
 
 #sectionM10 #sec_jornada {
     background: #ffffff;
-    padding: 50px;
+    padding: 30px 30px 15px;
     width: 100%;
     overflow: hidden;
 }
 
 .jornada_img {
-    width: 120px;
+    /* width: 120px; */
     float: left;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .jornada_title {
-    padding: 0px 20px 10px;
+    padding: 0px 20px 5px;
     width: 100%;
 }
 
@@ -57,6 +57,7 @@
 }
 
 .jornada_val_item p {
+    font-weight: bold;
     margin: 0px;
     margin-top: 5px;
 }
@@ -68,7 +69,16 @@
 
 /*SECTION INFO*/
 
-#sec_info {
+.sec_info {
+    overflow: hidden;
+    background: #02409C;
+}
+#slider-pesq{
+    text-align: center;
+    float: left;
+    width: calc(100% - 270px);
+}
+#sec_info___OLD {
     background: #02409C;
     width: 100%;
     padding: 15px 20px;
@@ -78,27 +88,27 @@
 }
 
 .info_title {
+    margin-top: 5px;
     float: left;
     overflow: hidden;
-    width: 280px;
+    width: 250px;
     height: 100%;
 }
 
 .info_title img {
     float: left;
-    height: 45px;
-    padding: 0px 10px;
-    margin-top: 1.5px
+    height: 37px;
+    padding: 0px 15px 0px 15px;
 }
 
 .info_title h2 {
     float: left;
-    width: 200px;
-    margin: 0px !important;
-    line-height: 1.05;
     font-weight: 100;
     font-size: 24px;
-    letter-spacing: 3px;
+    margin-top: 7px;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+    color: #F0F4F9;
     text-transform: uppercase;
 }
 
@@ -201,14 +211,15 @@
 }
 
 .digicard_div_text {
+    font-weight: bold;
     float: left;
-    width: calc(100% - 130px);
+    width: calc(100% - 90px);
 }
 
 .digicard_div_btn {
     text-align: right;
     float: right;
-    width: 70px;
+    width: 30px;
 }
 
 .digicard_div_btn img {
@@ -321,9 +332,9 @@
     margin: 5px;
 }
 
-.digicard_div_btn.arrow {
+/* .digicard_div_btn.arrow {
     width: 30px;
-}
+} */
 
 .digicard_div_btn.arrow div {
     width: 25px;
@@ -336,14 +347,56 @@
     background-image: url('../bto/images/icon/Icon_arrow_pressed.png');
 }
 
+.digicard_div_btn.arrow_right div {
+    /* width: 25px; */
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../bto/images/icon/Icon_arrow_right.png');
+}
+
 .collapsed .digicard_div_btn.arrow div {
     background-image: url('../bto/images/icon/Icon_arrow_normal.png');
 }
 
-@media only screen and (min-width:998px) {
-    .info_title {
-        width: 350px;
+#slider-pesq img {
+    width: auto;
+    display: initial;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+}
+
+.owl-prev {
+    float: left;
+}
+
+.owl-next {
+    float: right;
+}
+
+.show_alert p {
+    letter-spacing: 2px;
+    color: #DADADE;
+    cursor: pointer;
+}
+.dig-sub-header.sec_info{
+    max-height: 70px!important;
+}
+@media only screen and (max-width:905px) {
+    #slider-pesq{
+        width: 100%;
     }
+    .info_title {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:998px) {
+
     .info_content {
         width: calc(100% - 350px);
     }
@@ -351,10 +404,6 @@
 
 @media only screen and (max-width:920px) {
     .info_content {
-        width: 50%;
-    }
-    .info_title {
-        margin-top: 20px;
         width: 50%;
     }
     .digicard_div_text {
@@ -369,16 +418,16 @@
 }
 
 @media only screen and (max-width:710px) {
-    #sectionM10 #sec_jornada{
+    #sectionM10 #sec_jornada {
         padding: 30px 0px;
     }
-    .jornada_content{
+    .jornada_content {
         width: 100%;
         max-width: 400px;
         margin: 0 auto;
-        float:none;
+        float: none;
     }
-    .jornada_img{
+    .jornada_img {
         display: none;
     }
     .digicard_div_icon {
@@ -387,22 +436,7 @@
     .digicard_body_opt_wrp {
         padding: 0px 15px;
     }
-    .info_content {
-        width: 100%;
-        max-width: 300px;
-        float: none;
-        margin: 0 auto;
-        padding-bottom: 10px;
-    }
-    .info_title {
-        margin-top: 0px;
-        width: 100%;
-        max-width: 300px;
-        float: none;
-        text-align: center;
-        margin: 0 auto;
-        padding: 10px 0px 30px;
-    }
+
     #sectionM10 #sec_digcard .digcard {
         width: 100%;
         max-width: 350px;
