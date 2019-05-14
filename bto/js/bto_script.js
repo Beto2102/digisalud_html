@@ -555,7 +555,7 @@ var digiModule10 = {
                     items: 3
                 },
                 1000: {
-                    items:4
+                    items: 4
                 }
             }
         });
@@ -605,6 +605,11 @@ var digiModule13 = {
         btoFunction.mainPopUp();
         $("#return").hide();
         $("#print").hide();
+
+        $(document).on("click", ".go_table", function () {
+
+            window.location = "table.html";
+        });
 
         $(document).on("click", "#search", function () {
 
@@ -714,6 +719,16 @@ var digiModule13 = {
         $(document).on("click", "#dir_no", function () {
             $(this).parent().hide().prev().show();
             $(".asignate_do").removeClass("editando");
+        });
+    },
+    table: function () {
+        btoFunction.mainPopUp();
+
+        $("#save_consol").on("click", function () {
+            btoFunction.callDigiPopUp("Consolidado de Participantes", "Los datos se han actualizado correctamente", "success");
+            setTimeout(function () {
+                window.location.href = 'detail.html';
+            }, 2000);
         });
     }
 };
