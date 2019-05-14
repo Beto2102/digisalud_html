@@ -73,11 +73,13 @@
     overflow: hidden;
     background: #02409C;
 }
-#slider-pesq{
+
+#slider-pesq {
     text-align: center;
     float: left;
     width: calc(100% - 270px);
 }
+
 #sec_info___OLD {
     background: #02409C;
     width: 100%;
@@ -372,22 +374,31 @@
 
 .owl-prev {
     float: left;
+    display: none;
 }
 
 .owl-next {
     float: right;
 }
+.owl-next:focus, .owl-prev:focus {outline: none;}
 
 .show_alert p {
     letter-spacing: 2px;
-    color: #DADADE;
+    color: #52C1EC;
     cursor: pointer;
 }
-.dig-sub-header.sec_info{
+
+.dig-sub-header.sec_info {
     max-height: 70px!important;
 }
+
+.dig-sub-header .item img {
+   /* width: 40px!important;
+    height: 40px!important;*/
+}
+
 @media only screen and (max-width:905px) {
-    #slider-pesq{
+    #slider-pesq {
         width: 100%;
     }
     .info_title {
@@ -396,7 +407,6 @@
 }
 
 @media only screen and (min-width:998px) {
-
     .info_content {
         width: calc(100% - 350px);
     }
@@ -436,7 +446,6 @@
     .digicard_body_opt_wrp {
         padding: 0px 15px;
     }
-
     #sectionM10 #sec_digcard .digcard {
         width: 100%;
         max-width: 350px;

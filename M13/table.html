@@ -11,15 +11,15 @@
     <link href="../lib/MDB-Free/css/mdb.min.css" rel="stylesheet">
     <link href="../lib/fontawesome-free-5.2.0-web/css/all.min.css" rel="stylesheet">
     <link href="../bto/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="mod13.css" />
+
 
 </head>
 
 <body class="">
 
-    <!-- DIV QUE OPACA LA PANTALLA-->
+    <!-- Menu -->
     <div id="div-oculto"></div>
-    <!-- /DIV QUE OPACA LA PANTALLA-->
-
     <div id="digi-menu-log">
         <!-- MENU DESPLEGABLE -->
         <div class="digi-modal digi-menu ocultar-pop">
@@ -27,7 +27,7 @@
                 <i class="fas fa-times"></i>
             </div>
 
-            <div class="digi-cont-top digi-menu-header dig-deg-purple">
+            <div class="digi-cont-top digi-menu-header dig-deg-blue">
                 <div>
                     <img class="img-fluid" src="../bto/digisalud-logo.png" alt="Digisalud">
                 </div>
@@ -97,7 +97,7 @@
 
         <!-- MENU DESPLEGABLE PROFILE -->
         <div class="digi-modal digi-menu-prof ocultar-pop">
-            <div class="digi-cont-top digi-menu-header dig-deg-purple">
+            <div class="digi-cont-top digi-menu-header dig-deg-blue">
                 <div class="section-pr-name">
                     <h2>Alberto De Jesus</h2>
                     <p>Psicólogo</p>
@@ -179,7 +179,7 @@
         <!-- /notificacion pop up-->
 
         <!-- MENU items -->
-        <header class="header-digisalud dig-deg-purple">
+        <header class="header-digisalud dig-deg-blue">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-6">
@@ -224,175 +224,100 @@
         <!-- /MENU items -->
 
     </div>
+    <!-- /Menu -->
 
     <!-- Contenido -->
     <div id="sectionM4" class="sectionM4B">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center pt-5">
-                    <h2>Registro familiar</h2>
+            <div class="row pt-1">
+                <div class="col-12 text-center pt-4">
+                    <h2>CONSOLIDADO DE PARTICIPANTES</h2>
                 </div>
             </div>
-            <div class="row justify-content-center pt-5">
-                <div class="col-md-5">
-                    <div class="tipo-re-fa">
-                        <div class="round">
-                            <input type="checkbox" id="ch_resumen" checked />
-                            <label for="ch_resumen"></label>
-                            <span>Resumen</span>
-                        </div>
-                    </div>
-                    <div class="tipo-re-fa">
-                        <div class="round">
-                            <input type="checkbox" id="ch_encuesta" />
-                            <label for="ch_encuesta"></label>
-                            <span>Encuesta</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center pt-5">
+            <div class="row justify-content-center pt-4">
                 <div class="col-12">
                     <div class="table-responsive">
-                        <table class="table dig-deg-purple">
+                        <table class="table dig-deg-blue">
                             <thead>
                                 <tr class="">
-                                    <th class="text-center">Evaluación</th>
-                                    <th>Nombre(s)</th>
-                                    <th>Apellido(s)</th>
-                                    <th>Sexo</th>
-                                    <th>Edad</th>
-                                    <th>N° Doc.</th>
-                                    <th>Parentesco</th>
+                                    <th>Nombre y Apellido </th>
+                                    <th>Correo electrónico</th>
+                                    <th>Profesión</th>
+                                    <th class="text-center">Status</th>
+                                    <th class="text-center">Turno</th>
+                                    <th class="text-center">Rol</th>
                                     <th class="text-center">Acción</th>
-                                    <th class=" text-center">Autorizaciones</th>
                                 </tr>
                             </thead>
                             <tbody id="registros">
                                 <tr>
-                                    <td class="text-center">
-                                        <div class="round">
-                                            <input type="checkbox" id="a" />
-                                            <label for="a"></label>
-                                        </div>
+                                    <td>Roberto Colmenares</td>
+                                    <td>Colmenares@gmail.com</td>
+                                    <td>Odontólogo</td>
+                                    <td  class="text-center">Confirmado</td>
+                                    <td  class="text-center">
+                                        7:00 a 14:00 22/10<br>
+                                        7:00 a 14:00 23/10<br>
                                     </td>
-                                    <td>Roberto</td>
-                                    <td>Colmenares</td>
-                                    <td>M</td>
-                                    <td>20</td>
-                                    <td>12234545</td>
-                                    <td>Representante</td>
+                                    <td  class="text-center">
+                                        Registrador<br>
+                                        Evaluador
+                                    </td>
                                     <td class="table-action text-center">
                                         <a href="#"><img src="../bto/images/icon/edit.png" /></a>
                                         <a href="#"></a><img src="../bto/images/icon/Icon_x.png" /></a>
-                                    </td>
-                                    <td class="colap collapsed  text-center" data-toggle="collapse" data-target="#accor-0"
-                                        aria-expanded="false" aria-controls="accor-0"><img data-value="0"
-                                            src="../bto/images/icon/arrow_bottom.png" /></td>
-                                </tr>
-                                <tr id="accor-0" class="body-colap collapse" aria-labelledby="accor-0"
-                                    data-parent="#mybalanceG">
-                                    <td colspan="9">
-                                        <div class="content-img">
-                                            <img src="../bto/images/aut/evaluacionmedica_presset.png" />
-                                            <img src="../bto/images/aut/vacunacion_presset.png" />
-                                            <img src="../bto/images/aut/examenessanguineos_normal.png" />
-                                            <img src="../bto/images/aut/desparacitacion_normal.png" />
-                                            <img src="../bto/images/aut/evaluacionpsicologica_normal.png" />
-                                            <img src="../bto/images/aut/fotografia_presset.png" />
-                                        </div>
+                                        <a href="#"></a><img src="../bto/images/icon/Icon_x.png" /></a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <div class="round">
-                                            <input type="checkbox" id="a2" />
-                                            <label for="a2"></label>
-                                        </div>
+                                    <td>Roberto Colmenares</td>
+                                    <td>Colmenares@gmail.com</td>
+                                    <td>Odontólogo</td>
+                                    <td  class="text-center">Confirmado</td>
+                                    <td  class="text-center">
+                                        7:00 a 14:00 22/10<br>
+                                        7:00 a 14:00 23/10<br>
                                     </td>
-                                    <td>Roberto</td>
-                                    <td>Colmenares</td>
-                                    <td>M</td>
-                                    <td>20</td>
-                                    <td>12234545</td>
-                                    <td>Sobrino</td>
+                                    <td  class="text-center">
+                                        Registrador<br>
+                                        Evaluador
+                                    </td>
                                     <td class="table-action text-center">
                                         <a href="#"><img src="../bto/images/icon/edit.png" /></a>
                                         <a href="#"></a><img src="../bto/images/icon/Icon_x.png" /></a>
-                                    </td>
-                                    <td class="colap collapsed" data-toggle="collapse" data-target="#accor-2"
-                                        aria-expanded="false" aria-controls="accor-2"><img data-value="0"
-                                            src="../bto/images/icon/arrow_bottom.png" /></td>
-                                </tr>
-                                <tr id="accor-2" class="body-colap collapse" aria-labelledby="accor-2"
-                                    data-parent="#mybalanceG">
-                                    <td colspan="9">
-                                        <div class="content-img">
-                                            <img src="../bto/images/aut/evaluacionmedica_presset.png" />
-                                            <img src="../bto/images/aut/vacunacion_presset.png" />
-                                            <img src="../bto/images/aut/examenessanguineos_normal.png" />
-                                            <img src="../bto/images/aut/desparacitacion_normal.png" />
-                                            <img src="../bto/images/aut/evaluacionpsicologica_normal.png" />
-                                            <img src="../bto/images/aut/fotografia_presset.png" />
-                                        </div>
+                                        <a href="#"></a><img src="../bto/images/icon/Icon_x.png" /></a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <div class="round">
-                                            <input type="checkbox" id="a3" />
-                                            <label for="a3"></label>
-                                        </div>
+                                    <td>Roberto Colmenares</td>
+                                    <td>Colmenares@gmail.com</td>
+                                    <td>Odontólogo</td>
+                                    <td  class="text-center">Confirmado</td>
+                                    <td  class="text-center">
+                                        7:00 a 14:00 22/10<br>
+                                        7:00 a 14:00 23/10<br>
                                     </td>
-                                    <td>Roberto</td>
-                                    <td>Colmenares</td>
-                                    <td>M</td>
-                                    <td>20</td>
-                                    <td>12234545</td>
-                                    <td>Sobrino</td>
+                                    <td  class="text-center">
+                                        Registrador<br>
+                                        Evaluador
+                                    </td>
                                     <td class="table-action text-center">
                                         <a href="#"><img src="../bto/images/icon/edit.png" /></a>
                                         <a href="#"></a><img src="../bto/images/icon/Icon_x.png" /></a>
+                                        <a href="#"></a><img src="../bto/images/icon/Icon_x.png" /></a>
                                     </td>
-                                    <td class="colap collapsed" data-toggle="collapse" data-target="#accor-3"
-                                        aria-expanded="false" aria-controls="accor-3"><img data-value="0"
-                                            src="../bto/images/icon/arrow_bottom.png" /></td>
                                 </tr>
-                                <tr id="accor-3" class="body-colap collapse" aria-labelledby="accor-3"
-                                    data-parent="#mybalanceG">
-                                    <td colspan="9">
-                                        <div class="content-img">
-                                            <img src="../bto/images/aut/evaluacionmedica_presset.png" />
-                                            <img src="../bto/images/aut/vacunacion_presset.png" />
-                                            <img src="../bto/images/aut/examenessanguineos_normal.png" />
-                                            <img src="../bto/images/aut/desparacitacion_normal.png" />
-                                            <img src="../bto/images/aut/evaluacionpsicologica_normal.png" />
-                                            <img src="../bto/images/aut/fotografia_presset.png" />
-                                        </div>
-                                    </td>
-                                </tr>   
+                     
+  
                             </tbody>
-                            <tfoot>
-                                <tr>
-                                    <td colspan="9">
-                                        <div class="col-md-12 pt-3 pb-3 text-center">
-                                            <button id="add_miembro" class="btn btn-dig-purple">AGREGAR
-                                                FAMILIAR</button>
-                                        </div>
-
-                                    </td>
-                                </tr>
-                            </tfoot>
                         </table>
                     </div>
                 </div>
                 <div class="col-12 pt-3 pb-5 text-center">
-                    <button id="save_family" class="btn btn-dig-blue">GUARDAR REGISTRO</button>
+                    <button id="save_family" class="btn btn-dig-blue">GUARDAR CAMBIOS</button>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
     </div>
     <!--/CONTENIDO-->
 

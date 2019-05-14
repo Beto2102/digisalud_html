@@ -1579,13 +1579,6 @@ var Data = {
                     { 'id': '', 'name': '', 'type': 'break' },
                 ]
             }, {
-                'section': 'Factor',
-                'type': '2',
-                'data': [
-                    { 'id': 'a37', 'name': 'rh', 'type': 'checkEncuesta' },
-                    { 'id': '', 'name': '', 'type': 'break' },
-                ]
-            }, {
                 'section': 'Indique Alergias',
                 'type': '2',
                 'data': [
